@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarkBook!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a id="add" class="navbar-item" href="#">
+      + Create Bookmark
+    </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+          About
+        </a>
+
+          <div class="navbar-dropdown">
+
+            <a class="navbar-item">
+            <a target="_blank" href="https://github.com/melvincarvalho/solid-bookmark/wiki">Help</a>
+            </a>
+            <a class="navbar-item">
+            <a target="_blank" href="https://github.com/melvincarvalho/solid-bookmark/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">Report an issue</a>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+
+          <div class="buttons">
+            <a id="register" href="https://solid.inrupt.com/get-a-solid-pod" target="_blank" class="button is-primary">
+                     <strong>Sign up</strong>
+                     </a>
+            <a id="login" class="button is-light">
+                     Login
+                     </a>
+            <a id="logout" class="button is-light" style="display:none">
+                     Logout
+                     </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Solid Bookmarks
+      </h1>
+      <section id="app" style="display:none">
+
+
+        <div class="columns">
+          <div class="column is-one-third">
+
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img id="img" class="image is-128x128" src="https://melvincarvalho.github.io/solid-profile/images/profile.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img id="img" src="https://melvincarvalho.github.io/solid-profile/images/profile.png" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p id="name" class="title is-4"></p>
+                    <p class="subtitle is-6"></p>
+                  </div>
+                </div>
+
+                <div class="content">
+                    <a id="user" target="_blank" href="#"></a>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="column">
+            <div id="bookmarks">
+            </div>
+
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Create Bookmark</p>
+        <button id="close" class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        Create a bookmark
+        <form>
+          <input id="title" type="text" placeholder="Title">
+          <br>
+          <input id="uri" type="text" placeholder="Uri">
+        </form>
+      </section>
+      <footer class="modal-card-foot">
+        <button id="save" class="button is-success">Save changes</button>
+        <button id="cancel" class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://melvincarvalho.github.io/helloworld/scripts/jquery.js"></script>
+  <script src="https://melvincarvalho.github.io/helloworld/scripts/solid-auth-client.bundle.js"></script>
+  <script src="https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js"></script>
+  <script>
+    // INIT
+    var template = {}
+    template.bookmarks = []
+    template.profile = {} // profile to display
+
+    var state = {}
+    state.loggedIn = null
+    state.user = {} // logged in user
+    state.query = {} // query string user
+
+
+    function init () {
+      addListeners();
+      hamburgerHelper();
+      processQueryString()
+    }
+
+    function processQueryString() {
+      var webId = getQueryStringParam('webid')
+      if (webId) {
+        state.query.webId = webId
+        console.log('init', 'webid', state.query.webId)
+        fetchProfile()
+      }
+    }
+
+    // RENDER FUNCTIONS
+    function render() {
+      renderLogin()
+      renderApp()
+      renderProfile()
+      renderBookmarks()
+    }
+
+    function renderLogin() {
+
+      let logout = document.getElementById("logout");
+      let login = document.getElementById("login");
+      let register = document.getElementById("register")
+      let app = document.getElementById("app");
+
+      if (state.loggedIn) {
+        logout.style = ""
+        register.style.display = "none"
+        login.style.display = "none"
+      } else {
+        logout.style.display = "none"
+        login.style.display = ""
+        register.style.display = ""
+      }
+    }
+
+    function renderApp() {
+
+      let app = document.getElementById("app");
+
+      if (state.loggedIn || state.query.webId) {
+        app.style.display = ""
+      } else {
+        app.style.display = "none"
+      }
+    }
+
+    function renderProfile() {
+      console.log('rendering profile', template)
+      let user = document.getElementById("user");
+
+      if (state.loggedIn || state.query.webId) {
+        user.setAttribute("href", template.profile.webId);
+        user.style.display = "";
+        user.textContent = "Profile";
+      }
+
+      if (template.profile.name) {
+        document.getElementById("name").textContent = template.profile.name;
+      }
+      if (template.profile.img) {
+        document.getElementById("img").setAttribute("src", template.profile.img);
+      }
+    }
+
+    function renderBookmarks() {
+      console.log('rendering bookmarks', template)
+
+      let bookmarks = template.bookmarks.sort(function(a, b) {
+        createda = a.created;
+        createdb = b.created;
+        a = new Date(createda);
+        b = new Date(createdb);
+        return a>b ? -1 : a<b ? 1 : 0;
+      })
+      document.getElementById("bookmarks").display = ''
+      document.getElementById("bookmarks").innerHTML = ''
+      for (var i = 0; i < bookmarks.length; i++) {
+        let bookmark = bookmarks[i]
+        let documentEl = document.getElementById('bookmarks')
+
+        let bookmarkEl = `<article class="media">
+                      <figure class="media-left">
+                        <p class="image is-64x64">
+                          <img src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                      </figure>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>${template.profile.name}</strong>  <small><a target="_blank" href="${bookmark.subject}">${bookmark.created}</small>
+                            <br>
+                            <a target="_blank" href="${bookmark.recall}">${bookmark.title}</a>
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item">
+                              <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                            </a>
+                            <a class="level-item">
+                              <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                            </a>
+                            <a class="level-item">
+                              <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                      <div class="media-right">
+                        <button class="delete"></button>
+                      </div>
+                    </article>`
+
+        document.getElementById("bookmarks").insertAdjacentHTML('beforeEnd', bookmarkEl)
+        /*
+        document.getElementById("bookmarks").insertAdjacentHTML('beforeEnd', "<br>")
+        document.getElementById("bookmarks").insertAdjacentHTML('beforeEnd', "<br>")
+        document.getElementById("bookmarks").insertAdjacentHTML('beforeEnd', "<time><a target='_blank' href='" + bookmark.subject + "'>"+ bookmark.created +"</a></time>")
+        */
+        document.getElementById("bookmarks").insertAdjacentHTML('beforeEnd', "<hr>")
+      }
+    }
+
+    // FETCH
+    async function fetchProfile() {
+      template.profile.webId = state.query.webId || state.user.webId
+      const FOAF = $rdf.Namespace('http://xmlns.com/foaf/0.1/');
+      const SOLID = $rdf.Namespace('http://www.w3.org/ns/solid/terms#');
+      const store = $rdf.graph();
+      const fetcher = new $rdf.Fetcher(store);
+      // Load the person's data into the store
+      await fetcher.load(template.profile.webId);
+      // Display their details
+      const name = store.any($rdf.sym(template.profile.webId), FOAF('name'));
+      const img = store.any($rdf.sym(template.profile.webId), FOAF('img'));
+      template.profile.publicTypeIndex = store.any($rdf.sym(template.profile.webId), SOLID('publicTypeIndex'), null, $rdf.sym(template.profile.webId.split('#')[0]));
+      //console.log("publicTypeIndex", publicTypeIndex)
+      if (name && name.value) {
+        template.profile.name = name.value
+      }
+      if (img && img.value) {
+        template.profile.img = img.value
+      }
+      if (template.profile.publicTypeIndex && template.profile.publicTypeIndex.value) {
+        fetchPublicTypeIndex()
+      }
+      render()
+    }
+
+    async function fetchPublicTypeIndex() {
+      const BOOKMARK = $rdf.Namespace('https://www.w3.org/2002/01/bookmark#');
+      const SOLID = $rdf.Namespace('http://www.w3.org/ns/solid/terms#');
+      const store = $rdf.graph();
+      const fetcher = new $rdf.Fetcher(store);
+      // Load the person's data into the store
+      await fetcher.load(template.profile.publicTypeIndex);
+      // Display their details
+      template.profile.bookmarkTypeRegistration = store.any(null, SOLID("forClass"), BOOKMARK("Bookmark"))
+      console.log("bookmarkTypeRegistration", template.profile.bookmarkTypeRegistration)
+      if (template.profile.bookmarkTypeRegistration && template.profile.bookmarkTypeRegistration.value) {
+        template.profile.bookmarkInstance = store.any(template.profile.bookmarkTypeRegistration, SOLID("instance"));
+        template.profile.bookmarkInstance = template.profile.bookmarkInstance.value
+        fetchBookmarks()
+      }
+      render()
+    }
+
+    async function fetchBookmarks() {
+      const BOOKMARK = $rdf.Namespace('https://www.w3.org/2002/01/bookmark#');
+      const SOLID = $rdf.Namespace('http://www.w3.org/ns/solid/terms#');
+      const RDF = $rdf.Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#');
+      const DC = $rdf.Namespace('http://purl.org/dc/terms/')
+      const store = $rdf.graph();
+      const fetcher = new $rdf.Fetcher(store)
+      // Load the person's data into the store
+      console.log("bookmarkInstance", template.profile.bookmarkInstance)
+      await fetcher.load(template.profile.bookmarkInstance);
+      // Display their details
+      const bookmarks = store.statementsMatching(null, RDF("type"), BOOKMARK("Bookmark"));
+      console.log("Bookmarks", bookmarks);
+      if (bookmarks && bookmarks.length) {
+        template.bookmarks = []
+        for (var i = 0; i < bookmarks.length; i++) {
+          let bookmark = bookmarks[i]
+          let subject = bookmark.subject
+          let title = store.any(subject, DC('title'))
+          let created = store.any(subject, DC('created'))
+          let recall = store.any(subject, BOOKMARK('recall'))
+          if (subject && recall && created && title) {
+            template.bookmarks.push({
+              "subject": subject.value,
+              "recall": recall.value,
+              "created": created.value,
+              "title": title.value
+            })
+          }
+          console.log("bookmark " + i, bookmark)
+        }
+        console.log("template.bookmarks", template.bookmarks)
+        render()
+      }
+      console.log()
+    }
+
+    // HANDLERS
+    function handleLogin() {
+      // login event
+      solid.auth.trackSession(session => {
+        if (session && session.webId) {
+          state.user.webId = session.webId
+          state.loggedIn = true
+          fetchProfile()
+        }
+        render()
+      })
+    }
+
+    // Log the user in and out on click
+    function addListeners() {
+      let login = document.getElementById("login");
+      let logout = document.getElementById("logout");
+      let close = document.getElementById("close");
+      let cancel = document.getElementById("cancel");
+      let save = document.getElementById("save");
+      // login and logout buttons
+      const popupUri = "https://melvincarvalho.github.io/helloworld/popup.html";
+      login.addEventListener("click", () => solid.auth.popupLogin({
+        popupUri
+      }));
+      logout.addEventListener("click", () => {
+        state.loggedIn = false
+        solid.auth.logout()
+      });
+      handleLogin();
+
+      add.addEventListener("click", () => {
+        document.getElementById('modal').classList.add('is-active')
+      })
+      close.addEventListener("click", () => {
+        document.getElementById('modal').classList.remove('is-active')
+      })
+      cancel.addEventListener("click", () => {
+        document.getElementById('modal').classList.remove('is-active')
+      })
+      save.addEventListener("click", () => {
+        document.getElementById('modal').classList.remove('is-active')
+        let id = "#" + Math.random()
+        let uri = document.getElementById('uri').value
+        let title = document.getElementById('title').value
+        let source = template.profile.bookmarkInstance
+        let date = new Date().toISOString();
+        const query = ` INSERT DATA {
+            <${id}> a <https://www.w3.org/2002/01/bookmark#Bookmark> ;
+            <http://purl.org/dc/terms/title>   """${title}""" ;
+            <http://xmlns.com/foaf/0.1/maker>   <${template.profile.webId}> ;
+            <http://purl.org/dc/terms/created>  "${date}"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+            <https://www.w3.org/2002/01/bookmark#recall> <${uri}> .
+          }`
+        // Send a PATCH request to update the source
+        console.log("query", query)
+        solid.auth.fetch(source, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/sparql-update' },
+          body: query,
+          credentials: 'include',
+        });
+      })
+
+    }
+
+
+    // HELPERS
+    function hamburgerHelper() {
+      document.querySelector(".navbar-burger").addEventListener("click", toggleNav);
+
+      function toggleNav() {
+        var nav = document.querySelector(".navbar-menu");
+        if (nav.className == "navbar-menu") {
+          nav.className = "navbar-menu is-active";
+        } else {
+          nav.className = "navbar-menu";
+        }
+      }
+    }
+
+    function getQueryStringParam(param) {
+      var url = window.location.toString();
+      url.match(/\?(.+)$/);
+      var params = RegExp.$1;
+      params = params.split("&");
+      var queryStringList = {};
+      for (var i = 0; i < params.length; i++) {
+        var tmp = params[i].split("=");
+        queryStringList[tmp[0]] = unescape(tmp[1]);
+      }
+      return queryStringList[param];
+    }
+
+
+    // MAIN
+    init()
+
+  </script>
+
+</body>
+
+</html>
