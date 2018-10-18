@@ -324,7 +324,7 @@
       } else {
         console.log("no bookmark files, creating")
         const query = `INSERT DATA {
-            <#Bookmark> a <https://www.w3.org/ns/solid/terms#TypeRegistration> ;
+            <#Bookmark> a <http://www.w3.org/ns/solid/terms#TypeRegistration> ;
               <https://www.w3.org/ns/solid/terms#forClass> <http://www.w3.org/2002/01/bookmark#Bookmark> ;
               <https://www.w3.org/ns/solid/terms#instance> </public/bookmarks.ttl> .
             }`
