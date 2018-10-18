@@ -422,7 +422,10 @@
           headers: { 'Content-Type': 'application/sparql-update' },
           body: query,
           credentials: 'include',
-        });
+        }).then((ret) => {
+          console.log("finished", ret)
+          location.href.reload()
+        })
       })
 
     }
