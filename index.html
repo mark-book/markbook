@@ -89,7 +89,7 @@
                 <div class="media">
                   <div class="media-left">
                     <figure class="image is-48x48">
-                      <img id="img" src="https://melvincarvalho.github.io/solid-profile/images/profile.png" alt="Placeholder image">
+                      <img id="imgsmall" src="https://melvincarvalho.github.io/solid-profile/images/profile.png" alt="Placeholder image">
                     </figure>
                   </div>
                   <div class="media-content">
@@ -223,6 +223,7 @@
       }
       if (template.profile.img) {
         document.getElementById("img").setAttribute("src", template.profile.img);
+        document.getElementById("imgsmall").setAttribute("src", template.profile.img);
       }
     }
 
