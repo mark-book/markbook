@@ -321,6 +321,24 @@
         template.profile.bookmarkInstance = store.any(template.profile.bookmarkTypeRegistration, SOLID("instance"));
         template.profile.bookmarkInstance = template.profile.bookmarkInstance.value
         fetchBookmarks()
+      } else {
+        console.log("no bookmark files, creating")
+        const query = `INSERT DATA {
+            <#Bookmark> a solid:TypeRegistration ;
+              solid:forClass <http://www.w3.org/2002/01/bookmark#Bookmark> ;
+              solid:instance </public/bookmarks.ttl> .
+            }`
+        // Send a PATCH request to update the source
+        console.log("query", query)
+        solid.auth.fetch(template.profile.publicTypeIndex.value, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/sparql-update' },
+          body: query,
+          credentials: 'include',
+        }).then((ret) => {
+          console.log("finished", ret)
+          location.reload()
+        })
       }
       render()
     }
