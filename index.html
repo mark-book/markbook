@@ -325,8 +325,8 @@
         console.log("no bookmark files, creating")
         const query = `INSERT DATA {
             <#Bookmark> a solid:TypeRegistration ;
-              solid:forClass <http://www.w3.org/2002/01/bookmark#Bookmark> ;
-              solid:instance </public/bookmarks.ttl> .
+              <https://www.w3.org/ns/solid/terms#forClass> <http://www.w3.org/2002/01/bookmark#Bookmark> ;
+              <https://www.w3.org/ns/solid/terms#instance> </public/bookmarks.ttl> .
             }`
         // Send a PATCH request to update the source
         console.log("query", query)
