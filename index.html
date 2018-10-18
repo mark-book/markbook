@@ -249,7 +249,7 @@
                           <p>
                             <strong>${template.profile.name}</strong>  <small><a target="_blank" href="${bookmark.subject}" style="color: gray">${from}</small>
                             <br>
-                            <a target="_blank" href="${bookmark.recall}">${bookmark.title}</a>
+                            <a target="_blank" href="${bookmark.recalls}">${bookmark.title}</a>
                           </p>
                         </div>
                         <nav class="level is-mobile">
@@ -308,7 +308,7 @@
     }
 
     async function fetchPublicTypeIndex() {
-      const BOOKMARK = $rdf.Namespace('https://www.w3.org/2002/01/bookmark#');
+      const BOOKMARK = $rdf.Namespace('http://www.w3.org/2002/01/bookmark#');
       const SOLID = $rdf.Namespace('http://www.w3.org/ns/solid/terms#');
       const store = $rdf.graph();
       const fetcher = new $rdf.Fetcher(store);
@@ -325,8 +325,8 @@
         console.log("no bookmark files, creating")
         const query = `INSERT DATA {
             <#Bookmark> a <http://www.w3.org/ns/solid/terms#TypeRegistration> ;
-              <https://www.w3.org/ns/solid/terms#forClass> <http://www.w3.org/2002/01/bookmark#Bookmark> ;
-              <https://www.w3.org/ns/solid/terms#instance> </public/bookmarks.ttl> .
+              <http://www.w3.org/ns/solid/terms#forClass> <http://www.w3.org/2002/01/bookmark#Bookmark> ;
+              <http://www.w3.org/ns/solid/terms#instance> </public/bookmarks.ttl> .
             }`
         // Send a PATCH request to update the source
         console.log("query", query)
@@ -343,7 +343,7 @@
     }
 
     async function fetchBookmarks() {
-      const BOOKMARK = $rdf.Namespace('https://www.w3.org/2002/01/bookmark#');
+      const BOOKMARK = $rdf.Namespace('http://www.w3.org/2002/01/bookmark#');
       const SOLID = $rdf.Namespace('http://www.w3.org/ns/solid/terms#');
       const RDF = $rdf.Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#');
       const DC = $rdf.Namespace('http://purl.org/dc/terms/')
@@ -362,11 +362,11 @@
           let subject = bookmark.subject
           let title = store.any(subject, DC('title'))
           let created = store.any(subject, DC('created'))
-          let recall = store.any(subject, BOOKMARK('recall'))
-          if (subject && recall && created && title) {
+          let recalls = store.any(subject, BOOKMARK('recalls'))
+          if (subject && recalls && created && title) {
             template.bookmarks.push({
               "subject": subject.value,
-              "recall": recall.value,
+              "recalls": recalls.value,
               "created": created.value,
               "title": title.value
             })
@@ -427,11 +427,11 @@
         let source = template.profile.bookmarkInstance
         let date = new Date().toISOString();
         const query = ` INSERT DATA {
-            <${id}> a <https://www.w3.org/2002/01/bookmark#Bookmark> ;
+            <${id}> a <http://www.w3.org/2002/01/bookmark#Bookmark> ;
             <http://purl.org/dc/terms/title>   """${title}""" ;
             <http://xmlns.com/foaf/0.1/maker>   <${template.profile.webId}> ;
             <http://purl.org/dc/terms/created>  "${date}"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-            <https://www.w3.org/2002/01/bookmark#recall> <${uri}> .
+            <http://www.w3.org/2002/01/bookmark#recalls> <${uri}> .
           }`
         // Send a PATCH request to update the source
         console.log("query", query)
