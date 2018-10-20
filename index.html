@@ -334,7 +334,7 @@
               <http://www.w3.org/ns/solid/terms#instance> </public/bookmarks.ttl> .
             }`
         // Send a PATCH request to update the source
-        console.log("query", query)
+        console.log("sending PATCH query to",template.profile.publicTypeIndex.value ,query)
         solid.auth.fetch(template.profile.publicTypeIndex.value, {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/sparql-update' },
@@ -356,8 +356,18 @@
       const fetcher = new $rdf.Fetcher(store)
       // Load the person's data into the store
       console.log("bookmarkInstance", template.profile.bookmarkInstance)
-      await fetcher.load(template.profile.bookmarkInstance);
       // Display their details
+      try {
+        await fetcher.load(template.profile.bookmarkInstance)
+      } catch (e) {
+        console.log('error getting', template.profile.bookmarkInstance)
+        console.log(e)
+        await solid.auth.fetch(template.profile.bookmarkInstance, {
+          method : "PATCH",
+          headers : {"content-type" : "application/sparql-update"},
+          body : ""
+        })
+      }
       const bookmarks = store.statementsMatching(null, RDF("type"), BOOKMARK("Bookmark"));
       console.log("Bookmarks", bookmarks);
       if (bookmarks && bookmarks.length) {
