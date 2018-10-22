@@ -78,7 +78,8 @@
         Mark Book!
       </h1>
       <div id="guidance">
-        Log in or register to create your own bookmarks.
+        Login or sign up to create your own bookmarks.
+        <hr>
       </div>
       <section id="app" style="display:none">
 
@@ -210,7 +211,7 @@
 
       let app = document.getElementById("app");
 
-      if (state.loggedIn || state.query.webId) {
+      if (state.loggedIn || state.query.webId || state.query.bookmarkDoc) {
         app.style.display = ""
       } else {
         app.style.display = "none"
