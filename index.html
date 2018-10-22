@@ -74,9 +74,12 @@
 
   <section class="section">
     <div class="container">
-      <h1 class="title">
+      <h1 id="welcome" class="title">
         Mark Book!
       </h1>
+      <div id="guidance">
+        Log in or register to create your own bookmarks.
+      </div>
       <section id="app" style="display:none">
 
 
@@ -211,6 +214,13 @@
     function renderProfile() {
       console.log('rendering profile', template)
       let user = document.getElementById("user");
+      let guidance = document.getElementById("guidance");
+
+      if (state.loggedIn) {
+        guidance.style.display = 'none'
+      } else {
+        guidance.style.display = ''
+      }
 
       if (state.loggedIn || state.query.webId) {
         user.setAttribute("href", template.profile.webId);
