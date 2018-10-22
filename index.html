@@ -167,10 +167,16 @@
 
     function processQueryString() {
       var webId = getQueryStringParam('webid')
+      var bookmarkDoc = getQueryStringParam('bookmarkDoc')
       if (webId) {
         state.query.webId = webId
         console.log('init', 'webid', state.query.webId)
         fetchProfile()
+      }
+      if (bookmarkDoc) {
+        state.query.bookmarkDoc = bookmarkDoc.split('#')[0]
+        console.log('init', 'bookmarkDoc', state.query.webId)
+        fetchBookmarks()
       }
     }
 
@@ -365,6 +371,7 @@
       const store = $rdf.graph();
       const fetcher = new $rdf.Fetcher(store)
       // Load the person's data into the store
+      template.profile.bookmarkInstance =   state.query.bookmarkDoc || template.profile.bookmarkInstance
       console.log("bookmarkInstance", template.profile.bookmarkInstance)
       // Display their details
       try {
