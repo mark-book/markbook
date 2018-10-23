@@ -349,6 +349,7 @@
             <#Bookmark> a <http://www.w3.org/ns/solid/terms#TypeRegistration> ;
               <http://www.w3.org/ns/solid/terms#forClass> <http://www.w3.org/2002/01/bookmark#Bookmark> ;
               <http://www.w3.org/ns/solid/terms#instance> </public/bookmarks.ttl> .
+              <> <http://purl.org/dc/terms/references> <#Bookmark> .
             }`
         // Send a PATCH request to update the source
         console.log("sending PATCH query to",template.profile.publicTypeIndex.value ,query)
@@ -465,6 +466,7 @@
             <http://xmlns.com/foaf/0.1/maker>   <${template.profile.webId}> ;
             <http://purl.org/dc/terms/created>  "${date}"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
             <http://www.w3.org/2002/01/bookmark#recalls> <${uri}> .
+            <> <http://purl.org/dc/terms/references> <${id}> .
           }`
         // Send a PATCH request to update the source
         console.log("query", query)
