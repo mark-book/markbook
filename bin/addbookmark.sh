@@ -18,4 +18,4 @@ MAKER="$3"
 
 # TODO create heredoc with correct terms
 
-curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "INSERT DATA { <> <> <$URI> . } "
+curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "INSERT DATA { <> a <http://www.w3.org/2002/01/bookmark#Bookmark> . } "
