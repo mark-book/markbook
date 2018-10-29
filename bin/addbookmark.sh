@@ -1,8 +1,9 @@
 #!/bin/bash
 
 URI="$1"
-TITLE="$2"
+RECALLS="$2"
 MAKER="$3"
+TITLE+"$4"
 
 # <#0.01928626921678589>
 #    a bookm:Bookmark;
@@ -21,7 +22,6 @@ CREATED="2018-10-17T17:30:02.020Z"
 TITLE="Apple Launches Portal for U.S. Users to Download Their Data"
 RECALLS="https://www.bloomberg.com/news/articles/2018-10-17/apple-launches-portal-for-u-s-users-to-download-their-data"
 MAKER="https://melvincarvalho.com/#me"
-URI=$1
 
 read -r -d '' BODY <<EOF
 INSERT DATA {
