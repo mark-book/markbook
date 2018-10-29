@@ -23,7 +23,7 @@ RECALLS="https://www.bloomberg.com/news/articles/2018-10-17/apple-launches-porta
 MAKER="https://melvincarvalho.com/#me"
 URI=$1
 
-read -r -d '' BODY <<"EOF"
+read -r -d '' BODY <<EOF
 INSERT DATA {
   <> <http://purl.org/dc/terms/references> <$ID> .
   <$ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/01/bookmark#Bookmark> .
