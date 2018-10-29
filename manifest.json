@@ -1,0 +1,16 @@
+{
+  "short_name": "MarkBook",
+  "name": "MarkBook",
+  "icons": [
+    {
+      "src": "/images/markbook.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+  ],
+  "start_url": "/",
+  "background_color": "#8A2BE2",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#8A2BE2"
+}
