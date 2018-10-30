@@ -3,35 +3,36 @@
 URI="$1"
 RECALLS="$2"
 MAKER="$3"
-TITLE+"$4"
+TITLE="$4"
+ID="$5"
+CREATED="$6"
 
-# <#0.01928626921678589>
-#    a bookm:Bookmark;
-#    terms:created "2018-10-17T17:30:02.020Z"^^XML:dateTime;
-#    terms:title "Apple Launches Portal for U.S. Users to Download Their Data";
-#    bookm:recalls n0:apple-launches-portal-for-u-s-users-to-download-their-data;
-#    n1:maker n2:me.
+echo "URI : $URI" 1>&2
+echo "RECALLS : $RECALLS" 1>&2
+echo "MAKER : $MAKER" 1>&2
+echo "TITLE : $TITLE" 1>&2
+echo "ID : $ID" 1>&2
+echo "CREATED : $CREATED" 1>&2
 
-# <>
-#    terms:references
-#        <#0.01928626921678589
-#
 
-ID="#0.01928626921678589"
-CREATED="2018-10-17T17:30:02.020Z"
-TITLE="Apple Launches Portal for U.S. Users to Download Their Data"
-RECALLS="https://www.bloomberg.com/news/articles/2018-10-17/apple-launches-portal-for-u-s-users-to-download-their-data"
-MAKER="https://melvincarvalho.com/#me"
+if [ -z $CREATED ]
+then
+  echo "Usage: $0 <URI> <RECALLS> <MAKER> <TITLE> <ID> <CREATED>"
+  exit -1
+fi
+
+# DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") ;  bin/addbookmark.sh  https://bookmarks.inrupt.net/inbox/b.ttl "ifps:foo" "https://melvincarvalho.com/#me" "IPFS link" "0.${RANDOM}" $DATE
 
 read -r -d '' BODY <<EOF
 INSERT DATA {
   <> <http://purl.org/dc/terms/references> <$ID> .
   <$ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/01/bookmark#Bookmark> .
-  <$ID> <http://purl.org/dc/terms/created> "$CREATED"^^XML:dateTime .
+  <$ID> <http://purl.org/dc/terms/created> "$CREATED"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
   <$ID> <http://purl.org/dc/terms/title> """$TITLE""" .
-  <$ID> <http://www.w3.org/2002/01/bookmark/recalls> """$RECALLS""" .
+  <$ID> <http://www.w3.org/2002/01/bookmark/recalls> <$RECALLS> .
   <$ID> <http://xmlns.com/foaf/0.1/maker> """$MAKER""" .
 }
 EOF
 
-echo curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY"
+echo curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY" 2>&1
+curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY"
