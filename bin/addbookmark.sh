@@ -29,7 +29,7 @@ INSERT DATA {
   <$ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/01/bookmark#Bookmark> .
   <$ID> <http://purl.org/dc/terms/created> "$CREATED"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
   <$ID> <http://purl.org/dc/terms/title> """$TITLE""" .
-  <$ID> <http://www.w3.org/2002/01/bookmark/recalls> <$RECALLS> .
+  <$ID> <http://www.w3.org/2002/01/bookmark#recalls> <$RECALLS> .
   <$ID> <http://xmlns.com/foaf/0.1/maker> """$MAKER""" .
 }
 EOF
