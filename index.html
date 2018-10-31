@@ -271,6 +271,12 @@
         let bookmark = bookmarks[i]
         let documentEl = document.getElementById('bookmarks')
         let from = moment(bookmark.created).fromNow()
+        if (bookmark.recalls) {
+          var recalls = bookmark.recalls
+          if (recalls.startsWith('ipfs:')) {
+            recalls = 'https://gateway.ipfs.io/ipfs/' + recalls.substring(7)
+          }
+        }
 
         let bookmarkEl = `<article class="media">
                       <figure class="media-left">
@@ -283,7 +289,7 @@
                           <p>
                             <strong>${template.profile.name}</strong>  <small><a target="_blank" href="${bookmark.subject}" style="color: gray">${from}</small>
                             <br>
-                            <a target="_blank" href="${bookmark.recalls}">${bookmark.title}</a>
+                            <a target="_blank" href="${recalls}">${bookmark.title}</a>
                           </p>
                         </div>
                         <nav class="level is-mobile">
