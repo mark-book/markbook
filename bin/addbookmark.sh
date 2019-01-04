@@ -14,10 +14,13 @@ echo "TITLE : $TITLE" 1>&2
 echo "ID : $ID" 1>&2
 echo "CREATED : $CREATED" 1>&2
 
+usage() {
+  echo "Usage: $0 <URI> <RECALLS> <MAKER> <TITLE> <ID> <CREATED>"
+}
 
 if [ -z $CREATED ]
 then
-  echo "Usage: $0 <URI> <RECALLS> <MAKER> <TITLE> <ID> <CREATED>"
+  usage()
   exit -1
 fi
 
@@ -34,5 +37,6 @@ INSERT DATA {
 }
 EOF
 
+# @TODO : get authn params
 echo curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY" 2>&1
 curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY"
