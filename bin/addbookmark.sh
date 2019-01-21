@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o xtrace
+
 URI="$1"
 RECALLS="$2"
 MAKER="$3"
@@ -20,7 +22,7 @@ usage() {
 
 if [ -z $CREATED ]
 then
-  usage()
+  usage
   exit -1
 fi
 
@@ -38,5 +40,5 @@ INSERT DATA {
 EOF
 
 # @TODO : get authn params
-echo curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY" 2>&1
-curl -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY"
+echo curl -k -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY" 2>&1
+curl -k -X PATCH -H "Content-Type:application/sparql-update" "$URI" -d  "$BODY"
