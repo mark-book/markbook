@@ -32,7 +32,7 @@ fi
 # bin/addbookmark.sh https://melvin.solid.community/inbox/100sats.ttl "https://donnerlab.com/voucher/a143017f-2d38-fdsdfdsf" "https://melvincarvalho.com/#me" "100 satoshis voucher" "#id" "2019-01-21T14:30:02.020Z"
 
 # send ipfs
-# DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") ;  bin/addbookmark.sh  https://bookmarks.inrupt.net/inbox/b.ttl "ifps:foo" "https://melvincarvalho.com/#me" "IPFS link" "0.${RANDOM}" $DATE
+# DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") ;  bin/addbookmark.sh  https://bookmarks.inrupt.net/inbox/b.ttl "ipfs:foo" "https://melvincarvalho.com/#me" "IPFS link" "0.${RANDOM}" $DATE
 
 read -r -d '' BODY <<EOF
   <> <http://purl.org/dc/terms/references> <$ID> .

@@ -26,7 +26,7 @@ then
   exit -1
 fi
 
-# DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") ;  bin/addbookmark.sh  https://bookmarks.inrupt.net/inbox/b.ttl "ifps:foo" "https://melvincarvalho.com/#me" "IPFS link" "0.${RANDOM}" $DATE
+# DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") ;  bin/addbookmark.sh  https://bookmarks.inrupt.net/inbox/b.ttl "ipfs:foo" "https://melvincarvalho.com/#me" "IPFS link" "0.${RANDOM}" $DATE
 
 read -r -d '' BODY <<EOF
 INSERT DATA {
