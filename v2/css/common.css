@@ -1,0 +1,21 @@
+
+.section {
+    padding: 3rem 1.5rem;
+    max-width: 50%;
+    margin: 0 auto;
+    background-color: white;
+}
+html, body {
+  background-color:#E9EBEE;
+  height:100%;
+}
+
+input {
+  width : 95%
+}
+
+.box {
+  margin : 10px;
+  padding : 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
