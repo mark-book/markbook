@@ -20,7 +20,7 @@ fetch('https://www.reddit.com/r/' + sub + '/.json?limit=' + limit)
           let created = k.data.created
           let offset = 8 * 3600
           time = new Date((created - offset) * 1000).toISOString()
-          // console.log(k.data)
+
 
           let user = k.data.author
           let userURI = 'https://www.reddit.com/user/' + user + '#this'
@@ -38,6 +38,11 @@ fetch('https://www.reddit.com/r/' + sub + '/.json?limit=' + limit)
           <#${uri}> <http://www.w3.org/2002/01/bookmark#recalls> <${recalls}> .\n
           <#${uri}> <http://xmlns.com/foaf/0.1/maker> <${userURI}> .\n
           `)
+
+          // for (const [key, value] of Object.entries(k.data)) {
+          //   console.log('<#'+uri+'>', '<urn:json:' + key + '>', JSON.stringify(value))
+          // }
+
         })
       })
     }
