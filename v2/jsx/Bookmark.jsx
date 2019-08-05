@@ -18,8 +18,8 @@ function App () {
 
       <NavbarSolidLogin
         className='is-link'
-        title='Bookmark'
-        sourceCode='https://github.com/play-grounds/react/blob/gh-pages/play/bookmark.html' />
+        title='Mark Book!'
+        sourceCode='https://github.com/mark-book/markbook/blob/gh-pages/v2/index.html' />
 
       <Main />
 
