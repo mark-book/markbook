@@ -202,8 +202,11 @@
                     "@_POSITION": "right",
                     "@_ID": "ID_1672887815",
                     "@_CREATED": 1578920361269,
-                    "@_MODIFIED": 1578920375263,
+                    "@_MODIFIED": 1578920558012,
                     "@_LINK": "https://markbook.org/",
+                    "icon": {
+                        "@_BUILTIN": "wizard"
+                    },
                     "edge": {
                         "@_COLOR": "#007c00"
                     }
@@ -291,19 +294,22 @@
                                     "@_TEXT": "FOAF",
                                     "@_ID": "ID_500156053",
                                     "@_CREATED": 1578920493112,
-                                    "@_MODIFIED": 1578920494368
+                                    "@_MODIFIED": 1578920615264,
+                                    "@_LINK": "http://xmlns.com/foaf/0.1/"
                                 },
                                 {
                                     "@_TEXT": "DCT",
                                     "@_ID": "ID_599327468",
                                     "@_CREATED": 1578920497327,
-                                    "@_MODIFIED": 1578920499435
+                                    "@_MODIFIED": 1578920629700,
+                                    "@_LINK": "http://purl.org/dc/terms/"
                                 },
                                 {
                                     "@_TEXT": "BOOKMARK",
                                     "@_ID": "ID_32599561",
                                     "@_CREATED": 1578920501068,
-                                    "@_MODIFIED": 1578920503573
+                                    "@_MODIFIED": 1578920641110,
+                                    "@_LINK": "http://www.w3.org/2002/01/bookmark#"
                                 }
                             ]
                         }

@@ -65,7 +65,8 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="9" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Demo" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1672887815" CREATED="1578920361269" MODIFIED="1578920375263" LINK="https://markbook.org/">
+<node TEXT="Demo" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1672887815" CREATED="1578920361269" MODIFIED="1578920558012" LINK="https://markbook.org/">
+<icon BUILTIN="wizard"/>
 <edge COLOR="#007c00"/>
 </node>
 <node TEXT="App" POSITION="right" ID="ID_120250381" CREATED="1570979967089" MODIFIED="1578920390307">
@@ -88,9 +89,9 @@
 <font BOLD="true"/>
 <node TEXT="            &lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; ." ID="ID_1310058374" CREATED="1578919756017" MODIFIED="1578919892670"/>
 <node TEXT="Vocabs" ID="ID_129926507" CREATED="1578920490373" MODIFIED="1578920492221">
-<node TEXT="FOAF" ID="ID_500156053" CREATED="1578920493112" MODIFIED="1578920494368"/>
-<node TEXT="DCT" ID="ID_599327468" CREATED="1578920497327" MODIFIED="1578920499435"/>
-<node TEXT="BOOKMARK" ID="ID_32599561" CREATED="1578920501068" MODIFIED="1578920503573"/>
+<node TEXT="FOAF" ID="ID_500156053" CREATED="1578920493112" MODIFIED="1578920615264" LINK="http://xmlns.com/foaf/0.1/"/>
+<node TEXT="DCT" ID="ID_599327468" CREATED="1578920497327" MODIFIED="1578920629700" LINK="http://purl.org/dc/terms/"/>
+<node TEXT="BOOKMARK" ID="ID_32599561" CREATED="1578920501068" MODIFIED="1578920641110" LINK="http://www.w3.org/2002/01/bookmark#"/>
 </node>
 </node>
 <node TEXT="links" POSITION="left" ID="ID_808607355" CREATED="1570968728188" MODIFIED="1570968728190">
