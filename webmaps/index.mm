@@ -103,6 +103,20 @@
 </node>
 </node>
 </node>
+<node POSITION="left" ID="ID_1974475433" CREATED="1578928125418" MODIFIED="1578930147771" LINK="https://webapps.io/" COLOR="#000099"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Made with <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none"/>&#160;using webmaps.io
+  </body>
+</html>
+</richcontent>
+<font SIZE="10" BOLD="true"/>
+<edge COLOR="#ff00ff"/>
+</node>
 <node TEXT="links" POSITION="left" ID="ID_808607355" CREATED="1570968728188" MODIFIED="1578920755487">
 <icon BUILTIN="attach"/>
 <edge COLOR="#00007c"/>

@@ -337,6 +337,38 @@
                     ]
                 },
                 {
+                    "@_POSITION": "left",
+                    "@_ID": "ID_1974475433",
+                    "@_CREATED": 1578928125418,
+                    "@_MODIFIED": 1578930147771,
+                    "@_LINK": "https://webapps.io/",
+                    "@_COLOR": "#000099",
+                    "richcontent": {
+                        "@_TYPE": "NODE",
+                        "html": {
+                            "head": "",
+                            "body": {
+                                "#text": "Made with&#160;using webmaps.io",
+                                "img": {
+                                    "@_class": "emoji",
+                                    "@_alt": "heart",
+                                    "@_height": 20,
+                                    "@_width": 20,
+                                    "@_src": "https://github.githubassets.com/images/icons/emoji/unicode/2764.png",
+                                    "@_style": "border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none"
+                                }
+                            }
+                        }
+                    },
+                    "font": {
+                        "@_SIZE": 10,
+                        "@_BOLD": true
+                    },
+                    "edge": {
+                        "@_COLOR": "#ff00ff"
+                    }
+                },
+                {
                     "@_TEXT": "links",
                     "@_POSITION": "left",
                     "@_ID": "ID_808607355",
