@@ -1,14 +1,17 @@
-[![Stories](https://badge.waffle.io/mark-book/markbook.png)](https://waffle.io/mark-book/markbook)
+![markbook](https://raw.githubusercontent.com/mark-book/markbook/gh-pages/webmaps/index.html_files/image.png)
 
-# markbook
-book mark <-->  mark book, a social bookmarking app, for the solid platform
+# tech
 
-[Demo](https://markbook.org/)
+> book mark <-->  mark book, a social bookmarking app, for the solid platform
 
 # quick start
 
-- Register with a solid pod if you have not already
-- Login to your solid pod
-- Click on *create bookmark*
-- Add a bookmark to your pod
+- **Register:** Register with a solid pod if you have not already
+- **Login:** Login to your solid pod
+- **Create:** Click on *create bookmark* adds a bookmark to your pod
+
+[**Demo →**](https://markbook.org/)
+
+
+![markbook](https://raw.githubusercontent.com/mark-book/markbook/gh-pages/webmaps/index.html_files/image.png)
 
