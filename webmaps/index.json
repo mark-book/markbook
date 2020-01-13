@@ -191,17 +191,29 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 7,
+                    "@_COUNTER": 8,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
             "node": [
                 {
-                    "@_TEXT": "Details",
+                    "@_TEXT": "Demo",
+                    "@_LOCALIZED_STYLE_REF": "AutomaticLayout.level,1",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_1672887815",
+                    "@_CREATED": 1578920361269,
+                    "@_MODIFIED": 1578920375263,
+                    "@_LINK": "https://markbook.org/",
+                    "edge": {
+                        "@_COLOR": "#007c00"
+                    }
+                },
+                {
+                    "@_TEXT": "App",
                     "@_POSITION": "right",
                     "@_ID": "ID_120250381",
                     "@_CREATED": 1570979967089,
-                    "@_MODIFIED": 1570980228711,
+                    "@_MODIFIED": 1578920390307,
                     "icon": {
                         "@_BUILTIN": "list"
                     },
@@ -223,9 +235,15 @@
                     "@_POSITION": "right",
                     "@_ID": "ID_383868314",
                     "@_CREATED": 1578918629879,
-                    "@_MODIFIED": 1578918631187,
+                    "@_MODIFIED": 1578920406958,
+                    "icon": {
+                        "@_BUILTIN": "edit"
+                    },
                     "edge": {
                         "@_COLOR": "#7c0000"
+                    },
+                    "font": {
+                        "@_BOLD": true
                     },
                     "node": {
                         "@_TEXT": "One page app",
@@ -242,13 +260,19 @@
                     }
                 },
                 {
-                    "@_TEXT": "RDF",
+                    "@_TEXT": "LD",
                     "@_POSITION": "right",
                     "@_ID": "ID_940888504",
                     "@_CREATED": 1578919688495,
-                    "@_MODIFIED": 1578919751351,
+                    "@_MODIFIED": 1578920421653,
+                    "icon": {
+                        "@_BUILTIN": "revision"
+                    },
                     "edge": {
                         "@_COLOR": "#00007c"
+                    },
+                    "font": {
+                        "@_BOLD": true
                     },
                     "node": {
                         "@_TEXT": "&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .",
