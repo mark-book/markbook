@@ -1,8 +1,8 @@
-![markbook](https://raw.githubusercontent.com/mark-book/markbook/gh-pages/webmaps/index.html_files/image.png)
-
-# tech
+# markbook
 
 > book mark <-->  mark book, a social bookmarking app, for the solid platform
+
+![markbook](https://raw.githubusercontent.com/mark-book/markbook/gh-pages/webmaps/index.html_files/image.png)
 
 # quick start
 
