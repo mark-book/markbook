@@ -191,7 +191,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 8,
+                    "@_COUNTER": 9,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -274,12 +274,40 @@
                     "font": {
                         "@_BOLD": true
                     },
-                    "node": {
-                        "@_TEXT": "&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .",
-                        "@_ID": "ID_1310058374",
-                        "@_CREATED": 1578919756017,
-                        "@_MODIFIED": 1578919892670
-                    }
+                    "node": [
+                        {
+                            "@_TEXT": "&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .",
+                            "@_ID": "ID_1310058374",
+                            "@_CREATED": 1578919756017,
+                            "@_MODIFIED": 1578919892670
+                        },
+                        {
+                            "@_TEXT": "Vocabs",
+                            "@_ID": "ID_129926507",
+                            "@_CREATED": 1578920490373,
+                            "@_MODIFIED": 1578920492221,
+                            "node": [
+                                {
+                                    "@_TEXT": "FOAF",
+                                    "@_ID": "ID_500156053",
+                                    "@_CREATED": 1578920493112,
+                                    "@_MODIFIED": 1578920494368
+                                },
+                                {
+                                    "@_TEXT": "DCT",
+                                    "@_ID": "ID_599327468",
+                                    "@_CREATED": 1578920497327,
+                                    "@_MODIFIED": 1578920499435
+                                },
+                                {
+                                    "@_TEXT": "BOOKMARK",
+                                    "@_ID": "ID_32599561",
+                                    "@_CREATED": 1578920501068,
+                                    "@_MODIFIED": 1578920503573
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "@_TEXT": "links",
