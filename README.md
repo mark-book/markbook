@@ -2,7 +2,7 @@
 
 > book mark <-->  mark book, a social bookmarking app, for the solid platform
 
-![markbook](https://raw.githubusercontent.com/mark-book/markbook/gh-pages/webmaps/index.html_files/image.png)
+![markbook](https://mark-book.github.io/markbook/webmaps/index.html_files/image.png)
 
 [**Docs →**](https://mark-book.github.io/markbook/webmaps/index.html)
 
