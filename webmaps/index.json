@@ -191,7 +191,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 9,
+                    "@_COUNTER": 13,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -277,41 +277,62 @@
                     "font": {
                         "@_BOLD": true
                     },
+                    "node": {
+                        "@_TEXT": "&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .",
+                        "@_ID": "ID_1310058374",
+                        "@_CREATED": 1578919756017,
+                        "@_MODIFIED": 1578920790103,
+                        "cloud": {
+                            "@_COLOR": "#ffffcc",
+                            "@_SHAPE": "ROUND_RECT"
+                        }
+                    }
+                },
+                {
+                    "@_TEXT": "Structure",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_1985440428",
+                    "@_CREATED": 1578920805028,
+                    "@_MODIFIED": 1578920814684,
+                    "icon": {
+                        "@_BUILTIN": "xmag"
+                    },
+                    "edge": {
+                        "@_COLOR": "#007c7c"
+                    },
+                    "font": {
+                        "@_BOLD": true
+                    },
                     "node": [
                         {
-                            "@_TEXT": "&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .",
-                            "@_ID": "ID_1310058374",
-                            "@_CREATED": 1578919756017,
-                            "@_MODIFIED": 1578919892670
+                            "@_TEXT": "WebID is obtained from Login",
+                            "@_ID": "ID_690330746",
+                            "@_CREATED": 1578920816388,
+                            "@_MODIFIED": 1578920869368
                         },
                         {
-                            "@_TEXT": "Vocabs",
-                            "@_ID": "ID_129926507",
-                            "@_CREATED": 1578920490373,
-                            "@_MODIFIED": 1578920492221,
-                            "node": [
-                                {
-                                    "@_TEXT": "FOAF",
-                                    "@_ID": "ID_500156053",
-                                    "@_CREATED": 1578920493112,
-                                    "@_MODIFIED": 1578920615264,
-                                    "@_LINK": "http://xmlns.com/foaf/0.1/"
-                                },
-                                {
-                                    "@_TEXT": "DCT",
-                                    "@_ID": "ID_599327468",
-                                    "@_CREATED": 1578920497327,
-                                    "@_MODIFIED": 1578920629700,
-                                    "@_LINK": "http://purl.org/dc/terms/"
-                                },
-                                {
-                                    "@_TEXT": "BOOKMARK",
-                                    "@_ID": "ID_32599561",
-                                    "@_CREATED": 1578920501068,
-                                    "@_MODIFIED": 1578920641110,
-                                    "@_LINK": "http://www.w3.org/2002/01/bookmark#"
+                            "@_TEXT": "publicTypeIndex obtained from WebID",
+                            "@_ID": "ID_1974744289",
+                            "@_CREATED": 1578920869726,
+                            "@_MODIFIED": 1578920885578
+                        },
+                        {
+                            "@_TEXT": "bookmark file put in publicTypeIndex",
+                            "@_ID": "ID_50156365",
+                            "@_CREATED": 1578920886750,
+                            "@_MODIFIED": 1578920895537,
+                            "node": {
+                                "@_TEXT": "public/bookmarks.ttl",
+                                "@_ID": "ID_1011719771",
+                                "@_CREATED": 1578921184063,
+                                "@_MODIFIED": 1578921308829,
+                                "node": {
+                                    "@_TEXT": "default",
+                                    "@_ID": "ID_248766247",
+                                    "@_CREATED": 1578921302366,
+                                    "@_MODIFIED": 1578921304033
                                 }
-                            ]
+                            }
                         }
                     ]
                 },
@@ -320,12 +341,15 @@
                     "@_POSITION": "left",
                     "@_ID": "ID_808607355",
                     "@_CREATED": 1570968728188,
-                    "@_MODIFIED": 1570968728190,
+                    "@_MODIFIED": 1578920755487,
                     "icon": {
                         "@_BUILTIN": "attach"
                     },
                     "edge": {
                         "@_COLOR": "#00007c"
+                    },
+                    "font": {
+                        "@_BOLD": true
                     },
                     "node": [
                         {
@@ -349,12 +373,15 @@
                     "@_POSITION": "left",
                     "@_ID": "ID_1100215200",
                     "@_CREATED": 1570969039178,
-                    "@_MODIFIED": 1570980265221,
+                    "@_MODIFIED": 1578920756492,
                     "icon": {
                         "@_BUILTIN": "folder"
                     },
                     "edge": {
                         "@_COLOR": "#ff00ff"
+                    },
+                    "font": {
+                        "@_BOLD": true
                     },
                     "node": {
                         "@_TEXT": "README",
@@ -363,6 +390,98 @@
                         "@_MODIFIED": 1578920105050,
                         "@_LINK": "https://github.com/mark-book/markbook#markbook"
                     }
+                },
+                {
+                    "@_TEXT": "libs",
+                    "@_POSITION": "left",
+                    "@_ID": "ID_1286983084",
+                    "@_CREATED": 1578921023960,
+                    "@_MODIFIED": 1578921136898,
+                    "icon": {
+                        "@_BUILTIN": "16x16-free-application-icons/png/16x16/Left-right"
+                    },
+                    "edge": {
+                        "@_COLOR": "#7c7c00"
+                    },
+                    "font": {
+                        "@_BOLD": true
+                    },
+                    "node": [
+                        {
+                            "@_TEXT": "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js",
+                            "@_ID": "ID_851897190",
+                            "@_CREATED": 1578921033498,
+                            "@_MODIFIED": 1578921077420,
+                            "@_LINK": "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
+                        },
+                        {
+                            "@_TEXT": "https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js",
+                            "@_ID": "ID_1873299396",
+                            "@_CREATED": 1578921033498,
+                            "@_MODIFIED": 1578921084978,
+                            "@_LINK": "https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"
+                        },
+                        {
+                            "@_TEXT": "https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js",
+                            "@_ID": "ID_1373373760",
+                            "@_CREATED": 1578921033501,
+                            "@_MODIFIED": 1578921091190,
+                            "@_LINK": "https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js"
+                        }
+                    ]
+                },
+                {
+                    "@_TEXT": "Vocabs",
+                    "@_POSITION": "left",
+                    "@_ID": "ID_129926507",
+                    "@_CREATED": 1578920490373,
+                    "@_MODIFIED": 1578921168867,
+                    "icon": {
+                        "@_BUILTIN": "pencil"
+                    },
+                    "edge": {
+                        "@_COLOR": "#ff0000"
+                    },
+                    "font": {
+                        "@_BOLD": true
+                    },
+                    "node": [
+                        {
+                            "@_TEXT": "FOAF",
+                            "@_ID": "ID_500156053",
+                            "@_CREATED": 1578920493112,
+                            "@_MODIFIED": 1578920615264,
+                            "@_LINK": "http://xmlns.com/foaf/0.1/"
+                        },
+                        {
+                            "@_TEXT": "DCT",
+                            "@_ID": "ID_599327468",
+                            "@_CREATED": 1578920497327,
+                            "@_MODIFIED": 1578920629700,
+                            "@_LINK": "http://purl.org/dc/terms/"
+                        },
+                        {
+                            "@_TEXT": "BOOKMARK",
+                            "@_ID": "ID_32599561",
+                            "@_CREATED": 1578920501068,
+                            "@_MODIFIED": 1578920641110,
+                            "@_LINK": "http://www.w3.org/2002/01/bookmark#"
+                        },
+                        {
+                            "@_TEXT": "RDF",
+                            "@_ID": "ID_1370597730",
+                            "@_CREATED": 1578920923416,
+                            "@_MODIFIED": 1578920949302,
+                            "@_LINK": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        },
+                        {
+                            "@_TEXT": "SOLID",
+                            "@_ID": "ID_134386448",
+                            "@_CREATED": 1578920925271,
+                            "@_MODIFIED": 1578920938409,
+                            "@_LINK": "http://www.w3.org/ns/solid/terms#"
+                        }
+                    ]
                 }
             ]
         }

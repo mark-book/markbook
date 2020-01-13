@@ -2,19 +2,34 @@
 <#ID_120250381> <urn:string:@_TEXT> """App""" .
 <#ID_383868314> <urn:string:@_TEXT> """Code""" .
 <#ID_940888504> <urn:string:@_TEXT> """LD""" .
-<#ID_1310058374> <urn:string:@_TEXT> """&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .""" .
-<#ID_1310058374> <urn:string:child> <ID_1310058374> .
-<#ID_129926507> <urn:string:@_TEXT> """Vocabs""" .
-<#ID_129926507> <urn:string:child> <ID_129926507> .
-<#ID_500156053> <urn:string:@_TEXT> """FOAF""" .
-<#ID_500156053> <urn:string:child> <ID_500156053> .
-<#ID_599327468> <urn:string:@_TEXT> """DCT""" .
-<#ID_599327468> <urn:string:child> <ID_599327468> .
-<#ID_32599561> <urn:string:@_TEXT> """BOOKMARK""" .
-<#ID_32599561> <urn:string:child> <ID_32599561> .
+<#ID_1985440428> <urn:string:@_TEXT> """Structure""" .
+<#ID_690330746> <urn:string:@_TEXT> """WebID is obtained from Login""" .
+<#ID_690330746> <urn:string:child> <ID_690330746> .
+<#ID_1974744289> <urn:string:@_TEXT> """publicTypeIndex obtained from WebID""" .
+<#ID_1974744289> <urn:string:child> <ID_1974744289> .
+<#ID_50156365> <urn:string:@_TEXT> """bookmark file put in publicTypeIndex""" .
+<#ID_50156365> <urn:string:child> <ID_50156365> .
 <#ID_808607355> <urn:string:@_TEXT> """links""" .
 <#ID_885967166> <urn:string:@_TEXT> """github""" .
 <#ID_885967166> <urn:string:child> <ID_885967166> .
 <#ID_780116375> <urn:string:@_TEXT> """issues""" .
 <#ID_780116375> <urn:string:child> <ID_780116375> .
 <#ID_1100215200> <urn:string:@_TEXT> """docs""" .
+<#ID_1286983084> <urn:string:@_TEXT> """libs""" .
+<#ID_851897190> <urn:string:@_TEXT> """https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js""" .
+<#ID_851897190> <urn:string:child> <ID_851897190> .
+<#ID_1873299396> <urn:string:@_TEXT> """https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js""" .
+<#ID_1873299396> <urn:string:child> <ID_1873299396> .
+<#ID_1373373760> <urn:string:@_TEXT> """https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js""" .
+<#ID_1373373760> <urn:string:child> <ID_1373373760> .
+<#ID_129926507> <urn:string:@_TEXT> """Vocabs""" .
+<#ID_500156053> <urn:string:@_TEXT> """FOAF""" .
+<#ID_500156053> <urn:string:child> <ID_500156053> .
+<#ID_599327468> <urn:string:@_TEXT> """DCT""" .
+<#ID_599327468> <urn:string:child> <ID_599327468> .
+<#ID_32599561> <urn:string:@_TEXT> """BOOKMARK""" .
+<#ID_32599561> <urn:string:child> <ID_32599561> .
+<#ID_1370597730> <urn:string:@_TEXT> """RDF""" .
+<#ID_1370597730> <urn:string:child> <ID_1370597730> .
+<#ID_134386448> <urn:string:@_TEXT> """SOLID""" .
+<#ID_134386448> <urn:string:child> <ID_134386448> .
