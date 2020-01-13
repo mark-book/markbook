@@ -13,5 +13,4 @@
 [**Demo →**](https://markbook.org/)
 
 
-![markbook](https://raw.githubusercontent.com/mark-book/markbook/gh-pages/webmaps/index.html_files/image.png)
 
