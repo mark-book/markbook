@@ -116,7 +116,7 @@
 <font BOLD="true"/>
 <node TEXT="README" ID="ID_387137590" CREATED="1578918236074" MODIFIED="1578920105050" LINK="https://github.com/mark-book/markbook#markbook"/>
 </node>
-<node TEXT="libs" POSITION="left" ID="ID_1286983084" CREATED="1578921023960" MODIFIED="1578921136898">
+<node TEXT="libs" FOLDED="true" POSITION="left" ID="ID_1286983084" CREATED="1578921023960" MODIFIED="1578921136898">
 <icon BUILTIN="16x16-free-application-icons/png/16x16/Left-right"/>
 <edge COLOR="#7c7c00"/>
 <font BOLD="true"/>
