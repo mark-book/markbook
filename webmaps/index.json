@@ -191,7 +191,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 13,
+                    "@_COUNTER": 15,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -202,35 +202,61 @@
                     "@_POSITION": "right",
                     "@_ID": "ID_1672887815",
                     "@_CREATED": 1578920361269,
-                    "@_MODIFIED": 1578920558012,
+                    "@_MODIFIED": 1579018458540,
                     "@_LINK": "https://markbook.org/",
                     "icon": {
                         "@_BUILTIN": "wizard"
                     },
                     "edge": {
                         "@_COLOR": "#007c00"
-                    }
-                },
-                {
-                    "@_TEXT": "App",
-                    "@_POSITION": "right",
-                    "@_ID": "ID_120250381",
-                    "@_CREATED": 1570979967089,
-                    "@_MODIFIED": 1578920390307,
-                    "icon": {
-                        "@_BUILTIN": "list"
-                    },
-                    "edge": {
-                        "@_COLOR": "#00ff00"
                     },
                     "font": {
                         "@_BOLD": true
                     },
                     "node": {
-                        "@_TEXT": "Markbook is a bookmarking app for the solid platform",
+                        "@_TEXT": "User Guide",
+                        "@_LOCALIZED_STYLE_REF": "AutomaticLayout.level,1",
+                        "@_ID": "ID_1666578229",
+                        "@_CREATED": 1579018417540,
+                        "@_MODIFIED": 1579018450721,
+                        "@_LINK": "user/guide/index.mm",
+                        "icon": {
+                            "@_BUILTIN": "group"
+                        },
+                        "edge": {
+                            "@_STYLE": "bezier",
+                            "@_WIDTH": "thin"
+                        },
+                        "font": {
+                            "@_BOLD": true
+                        }
+                    }
+                },
+                {
+                    "@_TEXT": "Markbook",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_120250381",
+                    "@_CREATED": 1570979967089,
+                    "@_MODIFIED": 1579018591702,
+                    "@_COLOR": "#336600",
+                    "icon": {
+                        "@_BUILTIN": "list"
+                    },
+                    "font": {
+                        "@_BOLD": true
+                    },
+                    "edge": {
+                        "@_COLOR": "#00ff00"
+                    },
+                    "node": {
+                        "@_TEXT": "a bookmarking app for the solid platform",
                         "@_ID": "ID_495239312",
                         "@_CREATED": 1578918204474,
-                        "@_MODIFIED": 1578918212633
+                        "@_MODIFIED": 1579018609617,
+                        "@_COLOR": "#339900",
+                        "font": {
+                            "@_BOLD": true
+                        }
                     }
                 },
                 {
@@ -281,7 +307,9 @@
                         "@_TEXT": "&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .",
                         "@_ID": "ID_1310058374",
                         "@_CREATED": 1578919756017,
-                        "@_MODIFIED": 1578920790103,
+                        "@_MODIFIED": 1579018245469,
+                        "@_BORDER_WIDTH": "0.6 px",
+                        "@_BORDER_DASH": "SOLID",
                         "cloud": {
                             "@_COLOR": "#ffffcc",
                             "@_SHAPE": "ROUND_RECT"

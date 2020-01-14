@@ -64,16 +64,24 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="13" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Demo" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1672887815" CREATED="1578920361269" MODIFIED="1578920558012" LINK="https://markbook.org/">
+<hook NAME="AutomaticEdgeColor" COUNTER="15" RULE="ON_BRANCH_CREATION"/>
+<node TEXT="Demo" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1672887815" CREATED="1578920361269" MODIFIED="1579018458540" LINK="https://markbook.org/">
 <icon BUILTIN="wizard"/>
 <edge COLOR="#007c00"/>
-</node>
-<node TEXT="App" POSITION="right" ID="ID_120250381" CREATED="1570979967089" MODIFIED="1578920390307">
-<icon BUILTIN="list"/>
-<edge COLOR="#00ff00"/>
 <font BOLD="true"/>
-<node TEXT="Markbook is a bookmarking app for the solid platform" ID="ID_495239312" CREATED="1578918204474" MODIFIED="1578918212633"/>
+<node TEXT="User Guide" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" ID="ID_1666578229" CREATED="1579018417540" MODIFIED="1579018450721" LINK="user/guide/index.mm">
+<icon BUILTIN="group"/>
+<edge STYLE="bezier" WIDTH="thin"/>
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="Markbook" POSITION="right" ID="ID_120250381" CREATED="1570979967089" MODIFIED="1579018591702" COLOR="#336600">
+<icon BUILTIN="list"/>
+<font BOLD="true"/>
+<edge COLOR="#00ff00"/>
+<node TEXT="a bookmarking app for the solid platform" ID="ID_495239312" CREATED="1578918204474" MODIFIED="1579018609617" COLOR="#339900">
+<font BOLD="true"/>
+</node>
 </node>
 <node TEXT="Code" POSITION="right" ID="ID_383868314" CREATED="1578918629879" MODIFIED="1578920406958">
 <icon BUILTIN="edit"/>
@@ -87,7 +95,7 @@
 <icon BUILTIN="revision"/>
 <edge COLOR="#00007c"/>
 <font BOLD="true"/>
-<node TEXT="            &lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; ." ID="ID_1310058374" CREATED="1578919756017" MODIFIED="1578920790103">
+<node TEXT="            &lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; ." ID="ID_1310058374" CREATED="1578919756017" MODIFIED="1579018245469" BORDER_WIDTH="0.6 px" BORDER_DASH="SOLID">
 <cloud COLOR="#ffffcc" SHAPE="ROUND_RECT"/>
 </node>
 </node>

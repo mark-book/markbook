@@ -1,0 +1,251 @@
+{
+    "map": {
+        "@_version": "freeplane 1.7.0",
+        "node": {
+            "@_TEXT": "User Guide",
+            "@_FOLDED": false,
+            "@_ID": "ID_439809472",
+            "@_CREATED": 1579018368157,
+            "@_MODIFIED": 1579018641811,
+            "@_LINK": "../../index.mm",
+            "@_STYLE": "oval",
+            "icon": {
+                "@_BUILTIN": "group"
+            },
+            "edge": {
+                "@_STYLE": "bezier",
+                "@_COLOR": "#00ff00",
+                "@_WIDTH": "thin",
+                "@_DASH": "SOLID"
+            },
+            "font": {
+                "@_SIZE": 18,
+                "@_BOLD": false
+            },
+            "hook": [
+                {
+                    "@_NAME": "MapStyle",
+                    "properties": {
+                        "@_edgeColorConfiguration": "#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff",
+                        "@_fit_to_viewport": false
+                    },
+                    "map_styles": {
+                        "stylenode": {
+                            "@_LOCALIZED_TEXT": "styles.root_node",
+                            "@_STYLE": "oval",
+                            "@_UNIFORM_SHAPE": true,
+                            "@_VGAP_QUANTITY": "24.0 pt",
+                            "font": {
+                                "@_SIZE": 24
+                            },
+                            "stylenode": [
+                                {
+                                    "@_LOCALIZED_TEXT": "styles.predefined",
+                                    "@_POSITION": "right",
+                                    "@_STYLE": "bubble",
+                                    "stylenode": [
+                                        {
+                                            "@_LOCALIZED_TEXT": "default",
+                                            "@_ICON_SIZE": "12.0 pt",
+                                            "@_COLOR": "#000000",
+                                            "@_STYLE": "fork",
+                                            "font": {
+                                                "@_NAME": "SansSerif",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": false,
+                                                "@_ITALIC": false
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.details"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.attributes",
+                                            "font": {
+                                                "@_SIZE": 9
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.note",
+                                            "@_COLOR": "#000000",
+                                            "@_BACKGROUND_COLOR": "#ffffff",
+                                            "@_TEXT_ALIGN": "LEFT"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.floating",
+                                            "edge": {
+                                                "@_STYLE": "hide_edge"
+                                            },
+                                            "cloud": {
+                                                "@_COLOR": "#f0f0f0",
+                                                "@_SHAPE": "ROUND_RECT"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@_LOCALIZED_TEXT": "styles.user-defined",
+                                    "@_POSITION": "right",
+                                    "@_STYLE": "bubble",
+                                    "stylenode": [
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.topic",
+                                            "@_COLOR": "#18898b",
+                                            "@_STYLE": "fork",
+                                            "font": {
+                                                "@_NAME": "Liberation Sans",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": true
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.subtopic",
+                                            "@_COLOR": "#cc3300",
+                                            "@_STYLE": "fork",
+                                            "font": {
+                                                "@_NAME": "Liberation Sans",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": true
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.subsubtopic",
+                                            "@_COLOR": "#669900",
+                                            "font": {
+                                                "@_NAME": "Liberation Sans",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": true
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.important",
+                                            "icon": {
+                                                "@_BUILTIN": "yes"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@_LOCALIZED_TEXT": "styles.AutomaticLayout",
+                                    "@_POSITION": "right",
+                                    "@_STYLE": "bubble",
+                                    "stylenode": [
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level.root",
+                                            "@_COLOR": "#000000",
+                                            "@_STYLE": "oval",
+                                            "@_SHAPE_HORIZONTAL_MARGIN": "10.0 pt",
+                                            "@_SHAPE_VERTICAL_MARGIN": "10.0 pt",
+                                            "font": {
+                                                "@_SIZE": 18
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,1",
+                                            "@_COLOR": "#0033ff",
+                                            "font": {
+                                                "@_SIZE": 16
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,2",
+                                            "@_COLOR": "#00b439",
+                                            "font": {
+                                                "@_SIZE": 14
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,3",
+                                            "@_COLOR": "#990000",
+                                            "font": {
+                                                "@_SIZE": 12
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,4",
+                                            "@_COLOR": "#111111",
+                                            "font": {
+                                                "@_SIZE": 10
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,5"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,6"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,7"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,8"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,9"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,10"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,11"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@_NAME": "AutomaticEdgeColor",
+                    "@_COUNTER": 19,
+                    "@_RULE": "ON_BRANCH_CREATION"
+                }
+            ],
+            "node": {
+                "@_TEXT": "quick start",
+                "@_POSITION": "right",
+                "@_ID": "ID_1679770593",
+                "@_CREATED": 1579018683706,
+                "@_MODIFIED": 1579018715387,
+                "icon": {
+                    "@_BUILTIN": "launch"
+                },
+                "edge": {
+                    "@_COLOR": "#00ffff"
+                },
+                "font": {
+                    "@_BOLD": true
+                },
+                "node": [
+                    {
+                        "@_TEXT": "Register: Register with a solid pod if you have not already",
+                        "@_ID": "ID_863429899",
+                        "@_CREATED": 1579018683706,
+                        "@_MODIFIED": 1579018704013,
+                        "icon": {
+                            "@_BUILTIN": "full-1"
+                        }
+                    },
+                    {
+                        "@_TEXT": "Login: Login to your solid pod",
+                        "@_ID": "ID_361241044",
+                        "@_CREATED": 1579018683707,
+                        "@_MODIFIED": 1579018705484,
+                        "icon": {
+                            "@_BUILTIN": "full-2"
+                        }
+                    },
+                    {
+                        "@_TEXT": "Create: Clicking on create bookmark - adds a bookmark to your pod",
+                        "@_ID": "ID_1528346128",
+                        "@_CREATED": 1579018683710,
+                        "@_MODIFIED": 1579018706466,
+                        "icon": {
+                            "@_BUILTIN": "full-3"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
