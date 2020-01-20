@@ -64,7 +64,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="15" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="16" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Demo" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1672887815" CREATED="1578920361269" MODIFIED="1579018458540" LINK="https://markbook.org/">
 <icon BUILTIN="wizard"/>
 <edge COLOR="#007c00"/>
@@ -109,6 +109,13 @@
 <node TEXT="public/bookmarks.ttl" ID="ID_1011719771" CREATED="1578921184063" MODIFIED="1578921308829">
 <node TEXT="default" ID="ID_248766247" CREATED="1578921302366" MODIFIED="1578921304033"/>
 </node>
+</node>
+</node>
+<node TEXT="TODO" POSITION="right" ID="ID_1066323074" CREATED="1579505015118" MODIFIED="1579505025939">
+<edge COLOR="#00ffff"/>
+<node TEXT="add tags" ID="ID_1539675135" CREATED="1579505027345" MODIFIED="1579505053767">
+<node TEXT="find tag predicate" ID="ID_1364251886" CREATED="1579505031072" MODIFIED="1579505035531"/>
+<node TEXT="candidate: sioc topic" ID="ID_1933160669" CREATED="1579505037840" MODIFIED="1579505053748" LINK="https://www.w3.org/Submission/sioc-spec/#term_topic"/>
 </node>
 </node>
 <node POSITION="left" ID="ID_1974475433" CREATED="1578928125418" MODIFIED="1578930147771" LINK="https://webapps.io/" COLOR="#000099"><richcontent TYPE="NODE">

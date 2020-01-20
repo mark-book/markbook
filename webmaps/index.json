@@ -191,7 +191,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 15,
+                    "@_COUNTER": 16,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -363,6 +363,37 @@
                             }
                         }
                     ]
+                },
+                {
+                    "@_TEXT": "TODO",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_1066323074",
+                    "@_CREATED": 1579505015118,
+                    "@_MODIFIED": 1579505025939,
+                    "edge": {
+                        "@_COLOR": "#00ffff"
+                    },
+                    "node": {
+                        "@_TEXT": "add tags",
+                        "@_ID": "ID_1539675135",
+                        "@_CREATED": 1579505027345,
+                        "@_MODIFIED": 1579505053767,
+                        "node": [
+                            {
+                                "@_TEXT": "find tag predicate",
+                                "@_ID": "ID_1364251886",
+                                "@_CREATED": 1579505031072,
+                                "@_MODIFIED": 1579505035531
+                            },
+                            {
+                                "@_TEXT": "candidate: sioc topic",
+                                "@_ID": "ID_1933160669",
+                                "@_CREATED": 1579505037840,
+                                "@_MODIFIED": 1579505053748,
+                                "@_LINK": "https://www.w3.org/Submission/sioc-spec/#term_topic"
+                            }
+                        ]
+                    }
                 },
                 {
                     "@_POSITION": "left",
