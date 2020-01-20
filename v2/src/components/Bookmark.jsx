@@ -218,7 +218,7 @@ class Bookmark extends React.Component {
   isMedia(subject) {
     // TODO better test for linked data
     let isMedia = false
-    if (subject.match(/.ttl/)) {
+    if (subject.match(/.ttl/) || subject.match(/\/[^.]*$/) ) {
       isMedia = false
     } else {
       isMedia = true
