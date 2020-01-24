@@ -1,0 +1,27 @@
+<#ID_1539675135> <urn:string:@_TEXT> """add tags""" .
+<#ID_1364251886> <urn:string:@_TEXT> """find tag predicate""" .
+<#ID_1364251886> <urn:string:child> <ID_1364251886> .
+<#ID_1933160669> <urn:string:@_TEXT> """candidate: sioc topic""" .
+<#ID_1933160669> <urn:string:child> <ID_1933160669> .
+<#ID_1714336845> <urn:string:@_TEXT> """Sarvens Suggestions""" .
+<#ID_1714336845> <urn:string:child> <ID_1714336845> .
+<#ID_1021863286> <urn:string:@_TEXT> """bookmark media""" .
+<#ID_1327836702> <urn:string:@_TEXT> """Links""" .
+<#ID_1327836702> <urn:string:child> <ID_1327836702> .
+<#ID_1745938100> <urn:string:@_TEXT> """W3C Annotation Model""" .
+<#ID_1745938100> <urn:string:child> <ID_1745938100> .
+<#ID_1847510295> <urn:string:@_TEXT> """Selector States""" .
+<#ID_1847510295> <urn:string:child> <ID_1847510295> .
+<#ID_1298655402> <urn:string:@_TEXT> """Media Frags""" .
+<#ID_1298655402> <urn:string:child> <ID_1298655402> .
+<#ID_726157204> <urn:string:@_TEXT> """http://example.org/video1#t=30,60""" .
+<#ID_726157204> <urn:string:child> <ID_726157204> .
+<#ID_884335775> <urn:string:@_TEXT> """create spec""" .
+<#ID_460815739> <urn:string:@_TEXT> """a mini spec to show how to bookmark anything""" .
+<#ID_460815739> <urn:string:child> <ID_460815739> .
+<#ID_246273742> <urn:string:@_TEXT> """Explain terms""" .
+<#ID_246273742> <urn:string:child> <ID_246273742> .
+<#ID_85362562> <urn:string:@_TEXT> """Add vocabs used""" .
+<#ID_85362562> <urn:string:child> <ID_85362562> .
+<#ID_890730441> <urn:string:@_TEXT> """Explain data model""" .
+<#ID_890730441> <urn:string:child> <ID_890730441> .

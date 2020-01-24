@@ -1,0 +1,312 @@
+{
+    "map": {
+        "@_version": "freeplane 1.7.0",
+        "node": {
+            "@_TEXT": "TODO",
+            "@_FOLDED": false,
+            "@_ID": "ID_1066323074",
+            "@_CREATED": 1579505015118,
+            "@_MODIFIED": 1579866098253,
+            "@_LINK": "../index.mm",
+            "@_STYLE": "oval",
+            "font": {
+                "@_SIZE": 18
+            },
+            "edge": {
+                "@_STYLE": "bezier",
+                "@_COLOR": "#00ffff",
+                "@_WIDTH": "thin",
+                "@_DASH": "SOLID"
+            },
+            "hook": [
+                {
+                    "@_NAME": "MapStyle",
+                    "properties": {
+                        "@_edgeColorConfiguration": "#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff",
+                        "@_fit_to_viewport": false
+                    },
+                    "map_styles": {
+                        "stylenode": {
+                            "@_LOCALIZED_TEXT": "styles.root_node",
+                            "@_STYLE": "oval",
+                            "@_UNIFORM_SHAPE": true,
+                            "@_VGAP_QUANTITY": "24.0 pt",
+                            "font": {
+                                "@_SIZE": 24
+                            },
+                            "stylenode": [
+                                {
+                                    "@_LOCALIZED_TEXT": "styles.predefined",
+                                    "@_POSITION": "right",
+                                    "@_STYLE": "bubble",
+                                    "stylenode": [
+                                        {
+                                            "@_LOCALIZED_TEXT": "default",
+                                            "@_ICON_SIZE": "12.0 pt",
+                                            "@_COLOR": "#000000",
+                                            "@_STYLE": "fork",
+                                            "font": {
+                                                "@_NAME": "SansSerif",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": false,
+                                                "@_ITALIC": false
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.details"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.attributes",
+                                            "font": {
+                                                "@_SIZE": 9
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.note",
+                                            "@_COLOR": "#000000",
+                                            "@_BACKGROUND_COLOR": "#ffffff",
+                                            "@_TEXT_ALIGN": "LEFT"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "defaultstyle.floating",
+                                            "edge": {
+                                                "@_STYLE": "hide_edge"
+                                            },
+                                            "cloud": {
+                                                "@_COLOR": "#f0f0f0",
+                                                "@_SHAPE": "ROUND_RECT"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@_LOCALIZED_TEXT": "styles.user-defined",
+                                    "@_POSITION": "right",
+                                    "@_STYLE": "bubble",
+                                    "stylenode": [
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.topic",
+                                            "@_COLOR": "#18898b",
+                                            "@_STYLE": "fork",
+                                            "font": {
+                                                "@_NAME": "Liberation Sans",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": true
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.subtopic",
+                                            "@_COLOR": "#cc3300",
+                                            "@_STYLE": "fork",
+                                            "font": {
+                                                "@_NAME": "Liberation Sans",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": true
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.subsubtopic",
+                                            "@_COLOR": "#669900",
+                                            "font": {
+                                                "@_NAME": "Liberation Sans",
+                                                "@_SIZE": 10,
+                                                "@_BOLD": true
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "styles.important",
+                                            "icon": {
+                                                "@_BUILTIN": "yes"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@_LOCALIZED_TEXT": "styles.AutomaticLayout",
+                                    "@_POSITION": "right",
+                                    "@_STYLE": "bubble",
+                                    "stylenode": [
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level.root",
+                                            "@_COLOR": "#000000",
+                                            "@_STYLE": "oval",
+                                            "@_SHAPE_HORIZONTAL_MARGIN": "10.0 pt",
+                                            "@_SHAPE_VERTICAL_MARGIN": "10.0 pt",
+                                            "font": {
+                                                "@_SIZE": 18
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,1",
+                                            "@_COLOR": "#0033ff",
+                                            "font": {
+                                                "@_SIZE": 16
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,2",
+                                            "@_COLOR": "#00b439",
+                                            "font": {
+                                                "@_SIZE": 14
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,3",
+                                            "@_COLOR": "#990000",
+                                            "font": {
+                                                "@_SIZE": 12
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,4",
+                                            "@_COLOR": "#111111",
+                                            "font": {
+                                                "@_SIZE": 10
+                                            }
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,5"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,6"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,7"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,8"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,9"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,10"
+                                        },
+                                        {
+                                            "@_LOCALIZED_TEXT": "AutomaticLayout.level,11"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@_NAME": "AutomaticEdgeColor",
+                    "@_COUNTER": 17,
+                    "@_RULE": "ON_BRANCH_CREATION"
+                }
+            ],
+            "node": [
+                {
+                    "@_TEXT": "add tags",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_1539675135",
+                    "@_CREATED": 1579505027345,
+                    "@_MODIFIED": 1579505053767,
+                    "node": [
+                        {
+                            "@_TEXT": "find tag predicate",
+                            "@_ID": "ID_1364251886",
+                            "@_CREATED": 1579505031072,
+                            "@_MODIFIED": 1579505035531
+                        },
+                        {
+                            "@_TEXT": "candidate: sioc topic",
+                            "@_ID": "ID_1933160669",
+                            "@_CREATED": 1579505037840,
+                            "@_MODIFIED": 1579505053748,
+                            "@_LINK": "https://www.w3.org/Submission/sioc-spec/#term_topic"
+                        },
+                        {
+                            "@_TEXT": "Sarvens Suggestions",
+                            "@_ID": "ID_1714336845",
+                            "@_CREATED": 1579866335363,
+                            "@_MODIFIED": 1579866346318,
+                            "@_LINK": "https://github.com/solid/project-pane/issues/1#issuecomment-577635763"
+                        }
+                    ]
+                },
+                {
+                    "@_TEXT": "bookmark media",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_1021863286",
+                    "@_CREATED": 1579866035118,
+                    "@_MODIFIED": 1579866056838,
+                    "node": [
+                        {
+                            "@_TEXT": "Links",
+                            "@_ID": "ID_1327836702",
+                            "@_CREATED": 1579866351488,
+                            "@_MODIFIED": 1579866353914
+                        },
+                        {
+                            "@_TEXT": "W3C Annotation Model",
+                            "@_ID": "ID_1745938100",
+                            "@_CREATED": 1579866278376,
+                            "@_MODIFIED": 1579866287179,
+                            "@_LINK": "https://www.w3.org/TR/annotation-model/#example-17"
+                        },
+                        {
+                            "@_TEXT": "Selector States",
+                            "@_ID": "ID_1847510295",
+                            "@_CREATED": 1579866532478,
+                            "@_MODIFIED": 1579866540861,
+                            "@_LINK": "https://www.w3.org/TR/selectors-states/#FragmentSelector_def"
+                        },
+                        {
+                            "@_TEXT": "Media Frags",
+                            "@_ID": "ID_1298655402",
+                            "@_CREATED": 1579866594026,
+                            "@_MODIFIED": 1579866606913,
+                            "@_LINK": "https://www.w3.org/TR/media-frags/"
+                        },
+                        {
+                            "@_TEXT": "http://example.org/video1#t=30,60",
+                            "@_ID": "ID_726157204",
+                            "@_CREATED": 1579866577700,
+                            "@_MODIFIED": 1579866577700,
+                            "@_LINK": "http://example.org/video1#t=30,60"
+                        }
+                    ]
+                },
+                {
+                    "@_TEXT": "create spec",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_884335775",
+                    "@_CREATED": 1579866361530,
+                    "@_MODIFIED": 1579866364773,
+                    "edge": {
+                        "@_COLOR": "#7c0000"
+                    },
+                    "node": [
+                        {
+                            "@_TEXT": "a mini spec to show how to bookmark anything",
+                            "@_ID": "ID_460815739",
+                            "@_CREATED": 1579866365541,
+                            "@_MODIFIED": 1579866374488
+                        },
+                        {
+                            "@_TEXT": "Explain terms",
+                            "@_ID": "ID_246273742",
+                            "@_CREATED": 1579866487124,
+                            "@_MODIFIED": 1579866497238
+                        },
+                        {
+                            "@_TEXT": "Add vocabs used",
+                            "@_ID": "ID_85362562",
+                            "@_CREATED": 1579866477154,
+                            "@_MODIFIED": 1579866481674
+                        },
+                        {
+                            "@_TEXT": "Explain data model",
+                            "@_ID": "ID_890730441",
+                            "@_CREATED": 1579866498270,
+                            "@_MODIFIED": 1579866503016
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -191,7 +191,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 16,
+                    "@_COUNTER": 17,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -365,37 +365,6 @@
                     ]
                 },
                 {
-                    "@_TEXT": "TODO",
-                    "@_POSITION": "right",
-                    "@_ID": "ID_1066323074",
-                    "@_CREATED": 1579505015118,
-                    "@_MODIFIED": 1579505025939,
-                    "edge": {
-                        "@_COLOR": "#00ffff"
-                    },
-                    "node": {
-                        "@_TEXT": "add tags",
-                        "@_ID": "ID_1539675135",
-                        "@_CREATED": 1579505027345,
-                        "@_MODIFIED": 1579505053767,
-                        "node": [
-                            {
-                                "@_TEXT": "find tag predicate",
-                                "@_ID": "ID_1364251886",
-                                "@_CREATED": 1579505031072,
-                                "@_MODIFIED": 1579505035531
-                            },
-                            {
-                                "@_TEXT": "candidate: sioc topic",
-                                "@_ID": "ID_1933160669",
-                                "@_CREATED": 1579505037840,
-                                "@_MODIFIED": 1579505053748,
-                                "@_LINK": "https://www.w3.org/Submission/sioc-spec/#term_topic"
-                            }
-                        ]
-                    }
-                },
-                {
                     "@_POSITION": "left",
                     "@_ID": "ID_1974475433",
                     "@_CREATED": 1578928125418,
@@ -456,6 +425,17 @@
                             "@_CREATED": 1578918451453,
                             "@_MODIFIED": 1578918459763,
                             "@_LINK": "https://github.com/mark-book/markbook/issues"
+                        },
+                        {
+                            "@_TEXT": "TODO",
+                            "@_ID": "ID_137319548",
+                            "@_CREATED": 1579866080684,
+                            "@_MODIFIED": 1579866086805,
+                            "@_LINK": "TODO/index.mm",
+                            "edge": {
+                                "@_STYLE": "bezier",
+                                "@_WIDTH": "thin"
+                            }
                         }
                     ]
                 },
