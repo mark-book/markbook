@@ -75,7 +75,7 @@
 <node TEXT="W3C Annotation Model" ID="ID_1745938100" CREATED="1579866278376" MODIFIED="1579866287179" LINK="https://www.w3.org/TR/annotation-model/#example-17"/>
 <node TEXT="Selector States" ID="ID_1847510295" CREATED="1579866532478" MODIFIED="1579866540861" LINK="https://www.w3.org/TR/selectors-states/#FragmentSelector_def"/>
 <node TEXT="Media Frags" ID="ID_1298655402" CREATED="1579866594026" MODIFIED="1579866606913" LINK="https://www.w3.org/TR/media-frags/"/>
-<node TEXT="http://example.org/video1#t=30,60" ID="ID_726157204" CREATED="1579866577700" MODIFIED="1579866577700" LINK="http://example.org/video1#t=30,60"/>
+<node TEXT="http://example.org/video1#t=30,60" ID="ID_726157204" CREATED="1579866577700" MODIFIED="1579867313045"/>
 </node>
 <node TEXT="create spec" POSITION="right" ID="ID_884335775" CREATED="1579866361530" MODIFIED="1579866364773">
 <edge COLOR="#7c0000"/>
