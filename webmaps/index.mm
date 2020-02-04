@@ -110,6 +110,7 @@
 <node TEXT="default" ID="ID_248766247" CREATED="1578921302366" MODIFIED="1578921304033"/>
 </node>
 </node>
+<node TEXT="bookmarks.ttl refereces individual bookmarks" ID="ID_112721373" CREATED="1580816254423" MODIFIED="1580816275035"/>
 </node>
 <node POSITION="left" ID="ID_1974475433" CREATED="1578928125418" MODIFIED="1578930147771" LINK="https://webapps.io/" COLOR="#000099"><richcontent TYPE="NODE">
 
