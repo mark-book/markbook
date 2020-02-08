@@ -193,7 +193,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 17,
+                    "@_COUNTER": 19,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -304,6 +304,38 @@
                             "@_MODIFIED": 1579866503016
                         }
                     ]
+                },
+                {
+                    "@_TEXT": "v2",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_1843633406",
+                    "@_CREATED": 1581201288516,
+                    "@_MODIFIED": 1581201291463,
+                    "edge": {
+                        "@_COLOR": "#00007c"
+                    },
+                    "node": {
+                        "@_TEXT": "add create bookmark button",
+                        "@_ID": "ID_1882206157",
+                        "@_CREATED": 1581201293513,
+                        "@_MODIFIED": 1581201302228
+                    }
+                },
+                {
+                    "@_TEXT": "scripts",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_769537529",
+                    "@_CREATED": 1581201303877,
+                    "@_MODIFIED": 1581201307317,
+                    "edge": {
+                        "@_COLOR": "#007c00"
+                    },
+                    "node": {
+                        "@_TEXT": "create bookmark",
+                        "@_ID": "ID_1013561650",
+                        "@_CREATED": 1581201309418,
+                        "@_MODIFIED": 1581201321098
+                    }
                 }
             ]
         }
