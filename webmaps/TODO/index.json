@@ -330,12 +330,40 @@
                     "edge": {
                         "@_COLOR": "#007c00"
                     },
-                    "node": {
-                        "@_TEXT": "create bookmark",
-                        "@_ID": "ID_1013561650",
-                        "@_CREATED": 1581201309418,
-                        "@_MODIFIED": 1581201321098
-                    }
+                    "node": [
+                        {
+                            "@_TEXT": "create bookmark",
+                            "@_ID": "ID_1013561650",
+                            "@_CREATED": 1581201309418,
+                            "@_MODIFIED": 1581201321098
+                        },
+                        {
+                            "@_TEXT": "read playlists",
+                            "@_ID": "ID_340102611",
+                            "@_CREATED": 1581288788128,
+                            "@_MODIFIED": 1581288793872,
+                            "node": [
+                                {
+                                    "@_TEXT": "turtle",
+                                    "@_ID": "ID_1702013344",
+                                    "@_CREATED": 1581288794916,
+                                    "@_MODIFIED": 1581288798704
+                                },
+                                {
+                                    "@_TEXT": "m3u",
+                                    "@_ID": "ID_180137722",
+                                    "@_CREATED": 1581288799543,
+                                    "@_MODIFIED": 1581288803032
+                                }
+                            ]
+                        },
+                        {
+                            "@_TEXT": "write playlists",
+                            "@_ID": "ID_769948627",
+                            "@_CREATED": 1581288804920,
+                            "@_MODIFIED": 1581288809016
+                        }
+                    ]
                 }
             ]
         }

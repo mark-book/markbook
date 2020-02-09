@@ -27,3 +27,13 @@
 <#ID_890730441> <urn:string:child> <ID_890730441> .
 <#ID_1843633406> <urn:string:@_TEXT> """v2""" .
 <#ID_769537529> <urn:string:@_TEXT> """scripts""" .
+<#ID_1013561650> <urn:string:@_TEXT> """create bookmark""" .
+<#ID_1013561650> <urn:string:child> <ID_1013561650> .
+<#ID_340102611> <urn:string:@_TEXT> """read playlists""" .
+<#ID_340102611> <urn:string:child> <ID_340102611> .
+<#ID_1702013344> <urn:string:@_TEXT> """turtle""" .
+<#ID_1702013344> <urn:string:child> <ID_1702013344> .
+<#ID_180137722> <urn:string:@_TEXT> """m3u""" .
+<#ID_180137722> <urn:string:child> <ID_180137722> .
+<#ID_769948627> <urn:string:@_TEXT> """write playlists""" .
+<#ID_769948627> <urn:string:child> <ID_769948627> .
