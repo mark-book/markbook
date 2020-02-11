@@ -1,0 +1,5 @@
+<#ID_500156053> <urn:string:@_TEXT> """FOAF""" .
+<#ID_599327468> <urn:string:@_TEXT> """DCT""" .
+<#ID_32599561> <urn:string:@_TEXT> """BOOKMARK""" .
+<#ID_1370597730> <urn:string:@_TEXT> """RDF""" .
+<#ID_134386448> <urn:string:@_TEXT> """SOLID""" .

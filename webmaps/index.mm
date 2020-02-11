@@ -64,7 +64,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="17" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="18" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Demo" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1672887815" CREATED="1578920361269" MODIFIED="1579018458540" LINK="https://markbook.org/">
 <icon BUILTIN="wizard"/>
 <edge COLOR="#007c00"/>
@@ -150,15 +150,9 @@
 <node TEXT="https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js" ID="ID_1873299396" CREATED="1578921033498" MODIFIED="1578921084978" LINK="https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"/>
 <node TEXT="https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js" ID="ID_1373373760" CREATED="1578921033501" MODIFIED="1578921091190" LINK="https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js"/>
 </node>
-<node TEXT="Vocabs" POSITION="left" ID="ID_129926507" CREATED="1578920490373" MODIFIED="1578921168867">
-<icon BUILTIN="pencil"/>
-<edge COLOR="#ff0000"/>
+<node TEXT="Vocabs" POSITION="left" ID="ID_837364942" CREATED="1581444339067" MODIFIED="1581444339075" LINK="vocabs.mm">
+<edge STYLE="bezier" COLOR="#ff0000" WIDTH="thin"/>
 <font BOLD="true"/>
-<node TEXT="FOAF" ID="ID_500156053" CREATED="1578920493112" MODIFIED="1578920615264" LINK="http://xmlns.com/foaf/0.1/"/>
-<node TEXT="DCT" ID="ID_599327468" CREATED="1578920497327" MODIFIED="1578920629700" LINK="http://purl.org/dc/terms/"/>
-<node TEXT="BOOKMARK" ID="ID_32599561" CREATED="1578920501068" MODIFIED="1578920641110" LINK="http://www.w3.org/2002/01/bookmark#"/>
-<node TEXT="RDF" ID="ID_1370597730" CREATED="1578920923416" MODIFIED="1578920949302" LINK="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-<node TEXT="SOLID" ID="ID_134386448" CREATED="1578920925271" MODIFIED="1578920938409" LINK="http://www.w3.org/ns/solid/terms#"/>
 </node>
 </node>
 </map>

@@ -191,7 +191,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 17,
+                    "@_COUNTER": 18,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -511,55 +511,18 @@
                 {
                     "@_TEXT": "Vocabs",
                     "@_POSITION": "left",
-                    "@_ID": "ID_129926507",
-                    "@_CREATED": 1578920490373,
-                    "@_MODIFIED": 1578921168867,
-                    "icon": {
-                        "@_BUILTIN": "pencil"
-                    },
+                    "@_ID": "ID_837364942",
+                    "@_CREATED": 1581444339067,
+                    "@_MODIFIED": 1581444339075,
+                    "@_LINK": "vocabs.mm",
                     "edge": {
-                        "@_COLOR": "#ff0000"
+                        "@_STYLE": "bezier",
+                        "@_COLOR": "#ff0000",
+                        "@_WIDTH": "thin"
                     },
                     "font": {
                         "@_BOLD": true
-                    },
-                    "node": [
-                        {
-                            "@_TEXT": "FOAF",
-                            "@_ID": "ID_500156053",
-                            "@_CREATED": 1578920493112,
-                            "@_MODIFIED": 1578920615264,
-                            "@_LINK": "http://xmlns.com/foaf/0.1/"
-                        },
-                        {
-                            "@_TEXT": "DCT",
-                            "@_ID": "ID_599327468",
-                            "@_CREATED": 1578920497327,
-                            "@_MODIFIED": 1578920629700,
-                            "@_LINK": "http://purl.org/dc/terms/"
-                        },
-                        {
-                            "@_TEXT": "BOOKMARK",
-                            "@_ID": "ID_32599561",
-                            "@_CREATED": 1578920501068,
-                            "@_MODIFIED": 1578920641110,
-                            "@_LINK": "http://www.w3.org/2002/01/bookmark#"
-                        },
-                        {
-                            "@_TEXT": "RDF",
-                            "@_ID": "ID_1370597730",
-                            "@_CREATED": 1578920923416,
-                            "@_MODIFIED": 1578920949302,
-                            "@_LINK": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                        },
-                        {
-                            "@_TEXT": "SOLID",
-                            "@_ID": "ID_134386448",
-                            "@_CREATED": 1578920925271,
-                            "@_MODIFIED": 1578920938409,
-                            "@_LINK": "http://www.w3.org/ns/solid/terms#"
-                        }
-                    ]
+                    }
                 }
             ]
         }
