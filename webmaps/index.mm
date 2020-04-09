@@ -1,4 +1,4 @@
-<map version="freeplane 1.7.0">
+<map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="markbook" FOLDED="false" ID="ID_1831615648" CREATED="1569272472516" MODIFIED="1578918071338" ICON_SIZE="20.0 pt" LINK="index.mm" STYLE="oval">
 <icon BUILTIN="bookmark"/>
@@ -64,7 +64,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="18" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="19" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Demo" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1672887815" CREATED="1578920361269" MODIFIED="1579018458540" LINK="https://markbook.org/">
 <icon BUILTIN="wizard"/>
 <edge COLOR="#007c00"/>
@@ -111,6 +111,9 @@
 </node>
 </node>
 <node TEXT="bookmarks.ttl refereces individual bookmarks" ID="ID_112721373" CREATED="1580816254423" MODIFIED="1580816275035"/>
+</node>
+<node TEXT="model" POSITION="right" ID="ID_1528259244" CREATED="1586420347080" MODIFIED="1586420529139" LINK="model/index.mm">
+<edge COLOR="#007c00"/>
 </node>
 <node POSITION="left" ID="ID_1974475433" CREATED="1578928125418" MODIFIED="1578930147771" LINK="https://webapps.io/" COLOR="#000099"><richcontent TYPE="NODE">
 

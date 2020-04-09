@@ -1,6 +1,6 @@
 {
     "map": {
-        "@_version": "freeplane 1.7.0",
+        "@_version": "freeplane 1.8.0",
         "node": {
             "@_TEXT": "markbook",
             "@_FOLDED": false,
@@ -191,7 +191,7 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 18,
+                    "@_COUNTER": 19,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
@@ -369,6 +369,17 @@
                             "@_MODIFIED": 1580816275035
                         }
                     ]
+                },
+                {
+                    "@_TEXT": "model",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_1528259244",
+                    "@_CREATED": 1586420347080,
+                    "@_MODIFIED": 1586420529139,
+                    "@_LINK": "model/index.mm",
+                    "edge": {
+                        "@_COLOR": "#007c00"
+                    }
                 },
                 {
                     "@_POSITION": "left",

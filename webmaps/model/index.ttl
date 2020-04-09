@@ -1,0 +1,14 @@
+<#ID_940888504> <urn:string:@_TEXT> """LD""" .
+<#ID_1927609007> <urn:string:@_TEXT> """Canonical""" .
+<#ID_1927609007> <urn:string:child> <ID_1927609007> .
+<#ID_1170005262> <urn:string:@_TEXT> """Bookmark""" .
+<#ID_1170005262> <urn:string:child> <ID_1170005262> .
+<#ID_518382021> <urn:string:@_TEXT> """Bookmark Set""" .
+<#ID_518382021> <urn:string:child> <ID_518382021> .
+<#ID_1310058374> <urn:string:@_TEXT> """&lt;&gt; &lt;http://purl.org/dc/terms/references&gt; &lt;${id}&gt; .&#xa;&#xa;            &lt;${id}&gt; a &lt;http://www.w3.org/2002/01/bookmark#Bookmark&gt; ;&#xa;            &lt;http://purl.org/dc/terms/title&gt;   &quot;&quot;&quot;${title}&quot;&quot;&quot; ;&#xa;            &lt;http://xmlns.com/foaf/0.1/maker&gt;   &lt;${template.profile.webId}&gt; ;&#xa;            &lt;http://purl.org/dc/terms/created&gt;  &quot;${d}&quot;^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;&#xa;            &lt;http://www.w3.org/2002/01/bookmark#recalls&gt; &lt;${uri}&gt; .""" .
+<#ID_1310058374> <urn:string:child> <ID_1310058374> .
+<#ID_278925270> <urn:string:@_TEXT> """Text""" .
+<#ID_1548926952> <urn:string:@_TEXT> """List""" .
+<#ID_1548926952> <urn:string:child> <ID_1548926952> .
+<#ID_1264491229> <urn:string:@_TEXT> """&lt;${uri1}&gt;&#xa;&lt;${uri2}&gt;&#xa;&lt;${uri3}&gt;""" .
+<#ID_1264491229> <urn:string:child> <ID_1264491229> .
