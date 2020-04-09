@@ -1,6 +1,6 @@
 {
   "name": "solid-markbook",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a social bookmarking app for the solid platform",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/mark-book/markbook/issues"
   },
-  "homepage": "https://github.com/mark-book/markbook#readme"
+  "homepage": "https://github.com/mark-book/markbook#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
 }
