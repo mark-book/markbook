@@ -11,8 +11,8 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
     "Bookmark": "bookmark:Bookmark",
-    "references": {"@id": "dc:references", "@type": "@id"}
-    "recalls": {"@id": "bookmark:recalls", "@type": "@id"}
+    "references": {"@id": "dc:references", "@type": "@id"},
+    "recalls": {"@id": "bookmark:recalls", "@type": "@id"},
     "title": "dc:title",
     "created": {"@id": "dc:created", "@type": "xsd:dateTime"},
     "creator": {"@id": "dc:creator", "@type": "@id"}
