@@ -1,3 +1,11 @@
+# Development Status
+
+Unfortunately, a lack of backwards compatilibity in the newer Solid specs, has lead to many solid servers not working with this code base.
+
+Therefore, continued development on this repo is paused indefinitely.
+
+It is still, however, a goal to explore social bookmarking, taking into account newer innovation.
+
 # markbook
 
 > book mark <-->  mark book, a social bookmarking app, for the solid platform
