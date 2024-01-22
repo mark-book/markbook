@@ -504,11 +504,11 @@
                             "@_LINK": "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"
                         },
                         {
-                            "@_TEXT": "https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js",
+                            "@_TEXT": "https://nodeSolidServer.github.io/solid-auth-client/dist/solid-auth-client.bundle.js",
                             "@_ID": "ID_1873299396",
                             "@_CREATED": 1578921033498,
                             "@_MODIFIED": 1578921084978,
-                            "@_LINK": "https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"
+                            "@_LINK": "https://nodeSolidServer.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"
                         },
                         {
                             "@_TEXT": "https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js",

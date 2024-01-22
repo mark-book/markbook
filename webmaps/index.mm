@@ -150,7 +150,7 @@
 <edge COLOR="#7c7c00"/>
 <font BOLD="true"/>
 <node TEXT="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" ID="ID_851897190" CREATED="1578921033498" MODIFIED="1578921077420" LINK="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"/>
-<node TEXT="https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js" ID="ID_1873299396" CREATED="1578921033498" MODIFIED="1578921084978" LINK="https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"/>
+<node TEXT="https://nodeSolidServer.github.io/solid-auth-client/dist/solid-auth-client.bundle.js" ID="ID_1873299396" CREATED="1578921033498" MODIFIED="1578921084978" LINK="https://nodeSolidServer.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"/>
 <node TEXT="https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js" ID="ID_1373373760" CREATED="1578921033501" MODIFIED="1578921091190" LINK="https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js"/>
 </node>
 <node TEXT="Vocabs" POSITION="left" ID="ID_837364942" CREATED="1581444339067" MODIFIED="1581444339075" LINK="vocabs.mm">
