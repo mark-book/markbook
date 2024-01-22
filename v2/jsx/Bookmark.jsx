@@ -1,6 +1,6 @@
 // init
 const defaultUri = 'https://melvin.solid.live/public/bookmarks.ttl'
-var subject = getQueryStringParam('uri') || 'https://markbook.org/data/EarthPorn.ttl'
+var subject = getQueryStringParam('uri') || 'https://mark-book.github.io/markbook/data/EarthPorn.ttl'
 
 function Main (props) {
   return (

@@ -181,7 +181,7 @@ function NavbarSolid ({title, className, sourceCode, ...props}) {
 
   return (<Navbar className={className}>
     <Navbar.Brand>
-    <Navbar.Logo href='#' src="https://markbook.org/images/markbook.png" width="30" height="30" alt="Logo"></Navbar.Logo>
+    <Navbar.Logo href='#' src="https://mark-book.github.io/markbook/images/markbook.png" width="30" height="30" alt="Logo"></Navbar.Logo>
     <Navbar.Item href='#'>{title}</Navbar.Item>
       <Navbar.Burger/>
     </Navbar.Brand>
@@ -201,7 +201,7 @@ function NavbarSolidLogin ({title, className, sourceCode, ...props}) {
 
   return (<Navbar className={className}>
     <Navbar.Brand>
-    <Navbar.Logo href='#' src="https://markbook.org/images/markbook.png" width="30" height="30" alt="Logo"></Navbar.Logo>
+    <Navbar.Logo href='#' src="https://mark-book.github.io/markbook/images/markbook.png" width="30" height="30" alt="Logo"></Navbar.Logo>
     <Navbar.Item href='#'>{title}</Navbar.Item>
       <Navbar.Burger/>
     </Navbar.Brand>

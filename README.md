@@ -20,7 +20,7 @@ It is still, however, a goal to explore social bookmarking, taking into account 
 - **Login:** Login to your solid pod
 - **Create:** Clicking on *create bookmark* - adds a bookmark to your pod
 
-[**Demo →**](https://markbook.org/)
+[**Demo →**](https://mark-book.github.io/markbook/)
 
 
 
